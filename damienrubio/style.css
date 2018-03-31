@@ -1,0 +1,151 @@
+html, body { 
+	font-family: Tahoma;
+}
+body {
+    position: relative;
+    vertical-align:bottom;
+    margin:0 auto;
+	min-height:100%;
+	height: auto ! important;
+	height: 100%;
+}
+.clear {
+	clear: both;
+}
+/**************************************/
+/**************************************/
+
+/* HEADER */
+header {
+	position:absolute;
+    left:0;
+    top:0;
+	z-index: 90;
+	width: 100%;
+	line-height: 45px;
+	height: 45px;
+	vertical-align: baseline;	
+	background-color: rgba(255,255,255,0.9);
+}
+header div#header {
+	position: relative;
+	z-index: 91;
+	margin-left: 100px;
+}
+/* /HEADER */
+
+/**************************************/
+/**************************************/
+
+/* MENU */
+nav {
+	position:absolute;
+    left:0;
+	top:45px;
+	z-index: 90;
+	width: 100%;
+	background-color: rgba(51,51,51,0.5);
+	text-align: center;
+	text-shadow: 0 0 6px #000;
+}
+
+nav ul#top-menu {
+	position: relative;
+	text-transform:uppercase;
+	font-weight; bold;
+	text-align: center;
+}
+nav ul#top-menu li {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	margin-right: -5px;
+}
+
+nav ul#top-menu li a{
+	position: relative;
+	display: inline-block;
+	vertical-align: baseline;
+	line-height: 69px;
+	height: 69px;
+	min-width: 130px;
+	
+	color: #fbfbfb;
+	font-size: 22px;
+	text-align: center;
+	text-shadow: 0 0 4px #000;
+}
+nav ul#top-menu li a:hover{
+		background-color: rgba(0,253,253,0.5); /* transparency formula : x=(a-b)/b */
+}
+nav ul#top-menu li a.active{
+	background-color: rgba(0,253,253,0.5); /* transparency formula : x=(a-b)/b */
+}
+
+/* /MENU */
+
+/**************************************/
+/**************************************/
+
+/* CONTENT */
+div#page {
+	position: relative;
+	background: #efefef; 
+	-webkit-background-size: cover; /* pour Chrome et Safari */
+	-moz-background-size: cover; /* pour Firefox */
+	-o-background-size: cover; /* pour Opera */
+	background-size: cover; /* version standardisée */
+	width:7500px;
+	min-height: 100%;
+    height: auto !important;
+    /*Cause footer to stick to bottom in IE 6*/
+    height: 100%;
+    margin: 0 auto -45px; /* 0, auto, footer height*/
+    /*Allow for footer height*/
+}
+.section {
+	position: relative;
+	z-index: 10;
+	float: left;
+	width:2500px;
+	min-height:100%;
+	height: auto !important;
+	height: 100%;
+    /*Allow for footer height*/
+    vertical-align:bottom;
+}
+
+div#pushtop {
+	height: 114px; /* header+nav height */
+}
+div#page-content {
+	width: 450px;
+	height: auto !important;
+	margin: 30px 0 30px 200px;
+	font-size: 150px;
+}
+div#pushbottom {
+	height: 45px; /* footer height */
+}
+
+/* /CONTENT */
+
+/**************************************/
+/**************************************/
+
+/* FOOTER */
+footer {
+	position: relative;
+	z-index: 90;
+	background-color: rgba(33,33,33,0.5);
+	width: 100%;
+	line-height: 45px;
+	height: 45px;
+}
+footer div#footer {
+	z-index: 91;
+	margin-left: 100px;
+}/* /FOOTER */
+
+/**************************************/
+/**************************************/

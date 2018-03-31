@@ -1,0 +1,30 @@
+webapp:
+    restart: always
+    #image: troyfontaine/armhf-nginx:latest
+    image: nginx:latest
+    ports:
+        - "8080:80"
+    volumes:
+        # nginx
+        - ./nginx/sites-enabled:/etc/nginx/sites-enabled
+        - ./nginx/conf.d:/etc/nginx/conf.d
+
+        # websites
+        - ./default:/usr/share/nginx/html
+        - ./damienrubio:/usr/share/nginx/html/damienrubio
+        - ./skrib:/usr/share/nginx/html/skrib
+
+        #logs
+        - ./logs:/var/log/nginx
+    links:
+        - php
+
+php:
+    restart: always
+    #image: tobi312/rpi-php:7.0-fpm
+    image: php:latest
+    volumes:
+        # websites
+        - ./default:/usr/share/nginx/html
+        - ./damienrubio:/usr/share/nginx/html/damienrubio
+        - ./skrib:/usr/share/nginx/html/skrib

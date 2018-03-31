@@ -1,0 +1,102 @@
+/* Styling an indeterminate progress bar */
+progress:not(value) {
+	/* Add your styles here. As part of this walkthrough we will focus only on determinate progress bars. */
+}
+
+/* Styling the determinate progress element */
+progress[value] {
+	/* Get rid of the default appearance */
+	appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+	/* This unfortunately leaves a trail of border behind in Firefox and Opera. We can remove that by setting the border to none. */
+	border: none;
+	/* Add dimensions */
+	width: 100%; 
+	height: 15px;
+	/* Although firefox doesn't provide any additional pseudo class to style the progress element container, any style applied here works on the container. */
+	background-color: #323332;
+	border-radius: 3px;
+	box-shadow: 0px 0px 2px rgba(0,0,0,.8) inset;
+	/* Of all IE, only IE10 supports progress element that too partially. It only allows to change the background-color of the progress value using the 'color' attribute. */
+	color : #C7E604;
+	position: relative;
+	margin: 0 0 .5em; 
+}
+
+/*
+Webkit browsers provide two pseudo classes that can be use to style HTML5 progress element.
+-webkit-progress-bar -> To style the progress element container
+-webkit-progress-value -> To style the progress element value.
+*/
+progress[value]::-webkit-progress-bar {
+	background-color: #323332;
+	border-radius:3px;
+	box-shadow: 0px 0px 2px rgba(0,0,0,.8) inset;
+}
+progress[value]::-webkit-progress-value  {
+	position: relative;
+	background-size: 12px 15px, 100% 100%, 100% 100%;
+	border-radius: 3px;
+	
+	/* Let's animate this */
+	animation: animate-stripes 2s linear infinite;
+	background-image:
+		-webkit-linear-gradient( 160deg,
+								transparent,
+								transparent 33%,
+								rgba(0,0,0,.1) 33%,
+								rgba(0,0,0,.1) 66%,
+								transparent 66%),
+		-webkit-linear-gradient(top, #E5FB8E, #C7E604);
+}
+@keyframes animate-stripes { 100% { background-position: -100px 0; } }
+
+/* Firefox provides a single pseudo class to style the progress element value and not for container. -moz-progress-bar */
+progress[value]::-moz-progress-bar {
+	background-size: 12px 15px, 100% 100%, 100% 100%;
+	border-radius:3px;
+
+	/* Gradient background with Stripes */
+	background-image:
+		-moz-linear-gradient( 160deg,
+							transparent,
+							transparent 33%,
+							rgba(0,0,0,.1) 33%,
+							rgba(0,0,0,.1) 66%,
+							transparent 66%),
+		-moz-linear-gradient( top,
+							rgba(255, 255, 255, .25),
+							rgba(0,0,0,.2)),
+		-moz-linear-gradient(top, #E5FB8E, #C7E604);
+}
+
+/* Fallback technique styles */
+.progress-bar {
+	background-color: #323232;
+	background-image : linear-gradient(top, #E5FB8E, #C7E604);
+	border-radius: 3px;
+	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+
+	/* Dimensions should be similar to the parent progress element. */
+	width: 100%; height:15px;
+}
+
+.progress-bar span {
+	background-color: royalblue;
+	border-radius: 3px;
+	
+	display: block;
+	text-indent: -9999px;
+}
+
+p[data-value] { 
+  position: relative; 
+}
+
+/* The percentage will automatically fall in place as soon as we make the width fluid. Now making widths fluid. */
+p[data-value]:after {
+	content: attr(data-value) '%';
+	position: absolute; right:0;
+}  
+/* THE END */

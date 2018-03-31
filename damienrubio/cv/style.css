@@ -1,0 +1,92 @@
+html, body {
+	font-size: 13px;
+	font-family: Calibri;
+}
+div.body {
+	background: #ffffff;
+	max-width: 850px;
+	min-width: 850px;
+	margin: auto;
+	position: relative;
+	padding: 15px;
+}
+table.main {
+}
+table.main tr {
+	vertical-align: top;
+}
+div.table {
+	max-width: 600px;
+}
+div.table tr {
+	vertical-align: top;
+	padding: 10px;
+}
+div.table td {
+	padding: 10px;
+}
+.head {
+	font-family: 'Museo300' Calibri;
+	background-color: #DBE5F1;
+	font-size: 20px;
+	font-weight: bold;
+}
+.date {
+	font-weight: bold;
+}
+.title {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.esn {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 0.9em;
+}
+.mission {
+	display: inline-block;
+	margin-top: 12px;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.subtitle {
+	color: #B0B0B0;
+	font-weight: bold;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+.desc {
+
+}
+.white {
+
+}
+.blue {
+	color: #325886
+}
+
+div.skills {
+	display: block;
+	position: absolute;
+	top: 159px;
+	left: 635px;
+	background-color: #5387C3;
+	max-width: 250px;
+	color: #ffffff;
+	padding: 0 10px 10px 10px;
+}
+div.skills .head2 {
+	font-family: 'Museo300' Calibri;
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 20px;
+}
+div.skills tr {
+	vertical-align: top;
+}
+div.skills tr td img {
+	width: 100px;
+}
+div.skills tr td.title img {
+	width: 30px;
+}

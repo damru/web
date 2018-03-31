@@ -1,0 +1,44 @@
+div#forms {
+	margin: 50px auto 0px auto;
+	width: 500px; height: 330px;
+	background: #FFFFFF;
+	border:1px solid #d2d6da;
+	-webkit-box-shadow: 0 0 0 2px #dee2e6;
+	-moz-box-shadow: 0 0 0 2px #dee2e6;
+	-o-box-shadow: 0 0 0 2px #dee2e6;
+	box-shadow: 0 0 0 2px #dee2e6;
+}
+div#log_register_form {
+	width: 1000px;
+	position:relative;
+}
+
+div#log_register_form form {
+	font-family: 'CabinSemiBold', Helvetica, Arial, sans-serif;
+	top: 0px;
+	left: 0px;
+	color: #A1A1A1;
+	width: 500px;
+}
+form#log_form {
+	margin-top: 50px;
+	margin-left: 0;
+	float: left;
+}
+form#register_form {
+	padding-top: 50px;
+	margin-left: 500px;
+}
+
+table {
+	margin: 20px auto;
+	
+	color: #383838;
+}
+
+td {
+	padding: 10px 20px;
+}
+a.switch {
+	font-family: 'CabinRegular', Helvetica, Arial, sans-serif;
+}
