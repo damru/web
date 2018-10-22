@@ -1,5 +1,7 @@
 <?php
-	$print_more=false;
+	$print_pic=false;
+	$print_contact=true;
+	$print_loisirs=false;
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -15,14 +17,8 @@
 				<table style="width: 100%">
 					<tr style="width: 100%">
 						<td><span class="blue" style="font-size: 30px; font-weight: bold;">Damien RUBIO</span></td>
-						<td rowspan=5 style="width: 112px; height:135px"><?php if ($print_more) echo '<img src="id.png" />'; ?></td>
-					</tr>
-					<?php if ($print_more) echo '<tr><td>Téléphone: <a class="blue">+33(0)6.70.11.62.90</a></td></tr>'; ?>
-					<tr>
-						<td>Courriel: <a class="blue" href="mailto:job@damienrubio.com">job@damienrubio.com</a></td>
-					</tr>
-					<tr>
-						<td>22/07/1986, permis B</td>
+						<?php if ($print_contact) echo '<td>Téléphone: <a class="blue">(514)915-6290</a><br>Courriel: <a class="blue" href="mailto:job@damienrubio.com">job@damienrubio.com</a></td>'; ?>
+						<?php if ($print_pic) echo '<td rowspan=5 style="width: 112px; height:135px"><img src="id.png" /></td>'; ?>
 					</tr>
 				</table>
 			</div>
@@ -36,13 +32,15 @@
 								</tr>
 								<tr>
 									<td class="date blue">
-										Fév. - Sept. 2017
+										Depuis Fév. 2017
 									</td>
 									<td>
-										<span class="esn">Addstones, Consultant IT</span>
+										<br><span class="esn">CGI, Contractor (Oct. 2017)</span>
+										<br><span class="subtitle">Montreal, QC, Canada</span>
+										<span class="esn">Addstones, Consultant IT (Sept. 2017)</span>
 										<br><span class="subtitle">Paris, France</span>
 										<br><span class="mission">Société Général CIB, Technical Leader + Développeur</span>
-										<br>Développement backend d'une nouvelle application en mode DevOps et architecture micro-services (services REST, gateway, service discovery).
+										<br>Développement backend d'une application en mode DevOps et architecture micro-services (services REST, gateway, service discovery).
 										<ul><li>Java 8, Spring, Spring Boot, OAuth2, Consul, Zuul, Jenkins, Sonar, Git, Docker</li></ul>
 									</td>
 								</tr>
@@ -171,6 +169,7 @@
 										<br>Lycée Romain Rolland - Ivry sur Seine
 									</td>
 								</tr>
+								<?php if ($print_loisirs) : ?>
 								<tr>
 									<td class="head blue" colspan=2>LOISIRS</td>
 								</tr>
@@ -191,6 +190,7 @@
 									<td>Réalisation de projets web et logiciels : <b>création graphique et programmation</b>.<br>
 									Projets Android et Kinect</td>
 								</tr>
+								<?php endif; ?>
 								<tr>
 									<td></td>
 									<td></td>

@@ -1,5 +1,7 @@
 <?php
-	$print_more=false;
+	$print_pic=false;
+	$print_contact=true;
+	$print_loisirs=false;
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -14,21 +16,9 @@
 			<div style="width: 100%">
 				<table style="width: 100%">
 					<tr style="width: 100%">
-						<td><span class="blue" style="font-size: 30px; font-weight: bold;">Damien RUBIO</span></td>
-						<td rowspan=5 style="width: 112px; height:135px"><!--<img src="id.png" />--></td>
-					</tr>
-					<?php
-					if ($print_more) {
-						echo '<tr>
-						<td>Téléphone: <a class="blue">+33(0)6.70.11.62.90</a></td>
-						</tr>';
-					}
-					?>
-					<tr>
-						<td>Courriel: <a class="blue" href="mailto:rubio.damien@gmail.com">rubio.damien@gmail.com</a></td>
-					</tr>
-					<tr>
-						<td>22/07/1986, permis B</td>
+						<td><span class="blue" style="font-size: 30px; font-weight: bold;">Damien Rubio</span></td>
+						<?php if ($print_contact) echo '<td>(514)915-6290 | <a class="blue" href="mailto:job@damienrubio.com">job@damienrubio.com</a> | Montreal, QC, Canada</td>'; ?>
+						<?php if ($print_pic) echo '<td rowspan=5 style="width: 112px; height:135px"><img src="id.png" /></td>'; ?>
 					</tr>
 				</table>
 			</div>
@@ -38,75 +28,55 @@
 						<div class="table">
 							<table>
 								<tr>
-									<td class="head blue" colspan=2>EXPÉRIENCES PROFESSIONNELLES</td>
+									<td class="head blue" colspan=2>PROFESSIONAL EXPERIENCES</td>
 								</tr>
 								<tr>
 									<td class="date blue">
-										Fév. 2013 -
+										feb. 2017<br>present
 									</td>
 									<td>
-										<span class="title">SFEIR, Cabinet de Conseil – Consultant IT</span>
+										<span class="mission">Société Général CIB, IT Engineer, Technical Leader</span>
+										<br><span class="subtitle">Montreal, QC, Canada<br>Paris, France</span>
+										<br><span class="mission-desc">Microservice architecture • Backend development (mostly) • Frontend development (some) • Build automation </span>
+										<br><span class="mission-skills">Java 8 • Spring • Spring Boot • OAuth2 • Consul • Zuul • Jenkins • Sonar • Git • Maven • Docker • Angular • Python • BDD • TDD</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="date blue">
+										oct. 2016<br>feb. 2017
+									</td>
+									<td>
+										<span class="mission">SFEIR, IT Engineer</span>
 										<br><span class="subtitle">Neuilly sur Seine, France</span>
-										<br><strong>SFEIR People</strong><br>Participation au développement d'une application web dédiée aux compétences des collaborateurs.
-										<ul>
-											<li>Java 8</li>
-											<li>Docker</li>
-											<li>Spring, Spring Boot</li>
-											<li>Neo4J database</li>
-											<li>Google Cloud (AppEngine, ComputeEngine)</li>
-										</ul>
-										<br><strong>Generali - Saint-Denis</strong><br>Mission Etudes & Développements au sein du centre de service Java de Generali.
-										<br>- Bonnes pratiques<br>Mise en oeuvre de bonnes pratiques pour l'industrialisation du développement
-										<ul>
-											<li>Tests Selenium/Fluentlenium</li>
-											<li>Jenkins</li>
-										</ul>
-										<br>- Front Epargne<br>
-										<ul>
-											<li>Java J2EE</li>
-											<li>Javascript</li>
-											<li>Angular JS</li>
-											<li>
-										</ul>
+										<br><span class="mission-desc">Contribution to the development of an internal application dedicated to the employees.</span>
+										<br><span class="mission-skills">Java 8 • Docker • Spring • Spring Boot • Neo4J database • Google Cloud (AppEngine, ComputeEngine)</span>
+										<br><span class="mission">Generali, IT Engineer</span>
+										<br><span class="subtitle">La Plaine Saint-Denis, France</span>
+										<br><span class="mission-desc">Good practices implementation (industrialization, TDD, BDD, intergration testings) • Webservice migration (Corba to Java)</span>
+										<br><span class="mission-skills">J2EE • Javascript • Angular JS • Selenium/Fluentlenium  • Jenkins</span>
 									</td>
 								</tr>
 								<tr>
 									<td class="date blue">
-										Fév. 2013 - Sept. 2016
+										feb. 2013<br>oct. 2016
 									</td>
 									<td>
-										<span class="title">Adneom, Cabinet de Conseil – Consultant IT</span>
-										<br><span class="subtitle">Levallois-Perret, France</span>
-										<br><strong>CACIB - La D&eacute;fense</strong><br>Mission Etudes & Développements/Support au sein de la trésorerie de Crédit Agricole Corporate & Investment Bank.
-										<br>- Kondor+
-										<ul>
-											<li>Java</li>
-											<li>Kondor</li>
-											<li>Scripting shell</li>
-											<li>STP</li>
-											<li>Sybase ASE (T/SQL)</li>
-											<li>Mission de 2 mois à CACIB New-York : Refonte complète de l’architecture CTRLM<ul><li>Scheduler Control-M</li></ul></li>
-											<li>Gestion de l’équipe offshore (6 personnes en Inde) et coordination avec l’équipe onshore</li>
-										</ul>
-										- BLOFI<br>Refonte de l'application afin de migrer de Struts vers Spring et de Java 5 vers Java 7 essentiellement, avec une équipe composée de 6 personnes en Inde et 3 personnes à Paris.
-										<ul>
-											<li>Java J2EE</li>
-											<li>Spring</li>
-											<li>Hibernate</li>
-											<li>JUnit</li>
-											<li>SVN</li>
-											<li>Maven</li>
-											<li>Javascript</li>
-										</ul>
+										<span class="mission">Crédit Agricole CIB, IT Engineer</span>
+										<br><span class="subtitle">Courbevoie, France</span>
+										<br><span class="mission-desc">Study and development for Treasury IT • Front-to-back application Kondor+ • Support L3 • Offshore team management (India)</span>
+										<br><span class="mission-skills">Java • Kondor • Shell scripting • STP • Sybase ASE (T/SQL) • Management</span>
+										<br><span class="mission-desc">Complete makeover of the CTRLM (scheduler) architecture for CACIB New-York</span>
+										<br><span class="mission-skills">CTRLM • Shell scripting</span>
+										<br><span class="mission-desc">Complete makeover of Front application • Struts to Spring • Java 5 to Java 8</span>
+										<br><span class="mission-skills">J2EE • Spring • Hibernate • jUnit • SVN • Maven • Javascript</span>
 									</td>
 								</tr>
 								<tr>
 									<td class="date blue">
-										2012
-										<br>Mai – Nov.
+										may 2012<br>nov. 2012
 									</td>
 									<td>
-										<span class="title">BNP Paribas – Ingénieur Étude et Développement (Stage de fin d’études)</span>
+										<span class="mission">BNP Paribas, Programmer Analyst</span>
 										<br><span class="subtitle">Montreuil, France</span>
 										<br>Développement shell, C++, PowerBuilder, SQL (Sybase).
 										<br>Développements sur l’outil de reporting de la trésorerie de Paris « WARM » (10 personnes) :
@@ -121,11 +91,10 @@
 								</tr>
 								<tr>
 									<td class="date blue">
-										2011
-										<br>Avril – Juillet
+										apr. 2011<br>july 2011
 									</td>
 									<td>
-										<span class="title">buzzing light - Développeur web (Stage)</span>
+										<span class="mission">buzzing light, Développeur web (Stage)</span>
 										<br><span class="subtitle">Paris, France</span>
 										<br>Création d’une application web dédiée aux petits boulots, jobs temporaires et CDD.
 										<br>Développement PHP, HTML, AJAX et MySQL
@@ -136,11 +105,10 @@
 								</tr>
 								<tr>
 									<td class="date blue">
-										2010
-										<br>Juin – Sept.
+										june 2010<br>sept. 2010
 									</td>
 									<td>
-										<span class="title">« NDS Technology » - Assistant chef de projet marketing (Stage)</span>
+										<span class="mission">NDS Technology, Assistant chef de projet marketing (Stage)</span>
 										<br><span class="subtitle">Issy les Moulineaux, France</span>
 										<br>Création d’un intranet pour le service “Sales & Marketing France » grâce à l’utilisation du CMS Drupal.
 										<br>Communication B2B et B2C.
@@ -148,11 +116,10 @@
 								</tr>
 								<tr>
 									<td class="date blue">
-										2009
-										<br>Avril - Juin
+										apr. 2009<br>june 2009
 									</td>
 									<td>
-										<span class="title">Association « Comité Français de Cartographie » - Développeur web (Stage)</span>
+										<span class="mission">Association « Comité Français de Cartographie », Développeur web (Stage)</span>
 										<span class="subtitle">Saint Mandé, France</span>
 										<br>Refonte graphique et logicielle du site internet de l’association
 									</td>
@@ -161,7 +128,7 @@
 									<td class="head blue" colspan=2>FORMATIONS</td>
 								</tr>
 								<tr>
-									<td class="date blue">2009 - 2012</td>
+									<td class="date blue">2012</td>
 									<td>
 										<span class="title">Cycle Ingénieur, ECE Paris<br>Spécialisation Systèmes d’Information et Réseaux</span>
 										<br><span class="subtitle">option Audiovisuel & Médias Numériques</span>
@@ -170,7 +137,7 @@
 									</td>
 								</tr>
 								<tr>
-									<td class="date blue">2007 - 2009</td>
+									<td class="date blue">2009</td>
 									<td>
 										<span class="title">DUT Informatique<br>Spécialisation Génie Logiciel</span>
 										<br><span class="subtitle">option Génie Logiciel</span>
@@ -178,7 +145,7 @@
 									</td>
 								</tr>
 								<tr>
-									<td class="date blue">2004 - 2007</td>
+									<td class="date blue">2007</td>
 									<td>
 										<span class="title">DEUG Administration Économique et Sociale</span>
 										<br>Université Paris 1 - Panthéon-Sorbonne
@@ -192,6 +159,7 @@
 										<br>Lycée Romain Rolland - Ivry sur Seine
 									</td>
 								</tr>
+								<?php if ($print_loisirs) : ?>
 								<tr>
 									<td class="head blue" colspan=2>LOISIRS</td>
 								</tr>
@@ -212,6 +180,7 @@
 									<td>Réalisation de projets web et logiciels : <b>création graphique et programmation</b>.<br>
 									Projets Android et Kinect</td>
 								</tr>
+								<?php endif; ?>
 								<tr>
 									<td></td>
 									<td></td>
@@ -220,10 +189,11 @@
 						</div>
 					</td>
 					<td>
+						<div class="pre-skills">Skills</div>
 						<div class="skills">
 							<table>
 								<tr>
-									<td class="head2" colspan=2>COMPÉTENCES<BR> INFORMATIQUES</td>
+									<td class="head2" colspan=2>Architecture, Conception & Methodology</td>
 								</tr>
 								<tr>
 									<td class="title">UML</td>
@@ -241,12 +211,70 @@
 										</progress>
 									</td>
 								</tr>
-								<tr><td>&nbsp;</td></tr>
+								<tr>
+									<td class="title">TDD (jUnit) / BDD (Cucumber)</td>
+									<td>
+										<progress max="100" value ="100">
+											<div class="progress-bar"><span style="width: 100%">100%</span></div>
+										</progress>
+									</td>
+								</tr>
+								<tr>
+									<td class="title">Agile / Scrum</td>
+									<td>
+										<progress max="100" value ="100">
+											<div class="progress-bar"><span style="width: 100%">100%</span></div>
+										</progress>
+									</td>
+								</tr>
+								<tr>
+									<td class="title">API Design</td>
+									<td>
+										<progress max="100" value ="100">
+											<div class="progress-bar"><span style="width: 100%">100%</span></div>
+										</progress>
+									</td>
+								</tr>
+								<tr>
+									<td class="title">Microservice</td>
+									<td>
+										<progress max="100" value ="100">
+											<div class="progress-bar"><span style="width: 100%">100%</span></div>
+										</progress>
+									</td>
+								</tr>
+								<tr>
+									<td class="title">Consul</td>
+									<td>
+										<progress max="100" value ="85">
+											<div class="progress-bar"><span style="width: 85%">85%</span></div>
+										</progress>
+									</td>
+								</tr>
+								<tr>
+									<td class="head2" colspan=2>Languages & frameworks</td>
+								</tr>
 								<tr>
 									<td class="title">Java</td>
 									<td>
-										<progress max="100" value ="90">
-											<div class="progress-bar"><span style="width: 90%">90%</span></div>
+										<progress max="100" value ="95">
+											<div class="progress-bar"><span style="width: 95%">95%</span></div>
+										</progress>
+									</td>
+								</tr>
+								<tr>
+									<td class="title">Spring / Spring Boot</td>
+									<td>
+										<progress max="100" value ="95">
+											<div class="progress-bar"><span style="width: 95%">95%</span></div>
+										</progress>
+									</td>
+								</tr>
+								<tr>
+									<td class="title">Hibernate / JPA</td>
+									<td>
+										<progress max="100" value ="95">
+											<div class="progress-bar"><span style="width: 95%">95%</span></div>
 										</progress>
 									</td>
 								</tr>
@@ -254,15 +282,7 @@
 									<td class="title">C, C++</td>
 									<td>
 										<progress max="100" value ="40">
-											<div class="progress-bar"><span style="width: 40%">40%</span></div>
-										</progress>
-									</td>
-								</tr>
-								<tr>
-									<td class="title">.NET</td>
-									<td>
-										<progress max="100" value ="25">
-											<div class="progress-bar"><span style="width: 25%">25%</span></div>
+											<div class="progress-bar"><span style="width: 40%">30%</span></div>
 										</progress>
 									</td>
 								</tr>
@@ -270,33 +290,15 @@
 									<td class="title">PHP</td>
 									<td>
 										<progress max="100" value ="90">
-											<div class="progress-bar"><span style="width: 90%">90%</span></div>
+											<div class="progress-bar"><span style="width: 90%">80%</span></div>
 										</progress>
 									</td>
 								</tr>
-								<tr><td>&nbsp;</td></tr>
-								<tr>
-									<td class="title">T/SQL</td>
-									<td>
-										<progress max="100" value ="95">
-											<div class="progress-bar"><span style="width: 95%">95%</span></div>
-										</progress>
-									</td>
-								</tr>
-								<tr>
-									<td class="title">MySQL</td>
-									<td>
-										<progress max="100" value ="95">
-											<div class="progress-bar"><span style="width: 95%">95%</span></div>
-										</progress>
-									</td>
-								</tr>
-								<tr><td>&nbsp;</td></tr>
 								<tr>
 									<td class="title">HTML</td>
 									<td>
 										<progress max="100" value ="95">
-											<div class="progress-bar"><span style="width: 95%">95%</span></div>
+											<div class="progress-bar"><span style="width: 95%">90%</span></div>
 										</progress>
 									</td>
 								</tr>
@@ -317,31 +319,32 @@
 									</td>
 								</tr>
 								<tr>
-									<td class="title">AJAX</td>
+									<td class="title">Angular</td>
+									<td>
+										<progress max="100" value ="20">
+											<div class="progress-bar"><span style="width: 20%">20%</span></div>
+										</progress>
+									</td>
+								</tr>
+								<tr>
+									<td class="title">Python</td>
+									<td>
+										<progress max="100" value ="40">
+											<div class="progress-bar"><span style="width: 40%">40%</span></div>
+										</progress>
+									</td>
+								</tr>
+								<tr>
+									<td class="title">Shell scripting</td>
 									<td>
 										<progress max="100" value ="80">
 											<div class="progress-bar"><span style="width: 80%">80%</span></div>
 										</progress>
 									</td>
 								</tr>
-								<tr><td>&nbsp;</td></tr>
 								<tr>
-									<td class="title">Shell</td>
-									<td>
-										<progress max="100" value ="95">
-											<div class="progress-bar"><span style="width: 95%">95%</span></div>
-										</progress>
-									</td>
+									<td class="head2" colspan=2>OS</td>
 								</tr>
-								<tr>
-									<td class="title">Python<br></td>
-									<td>
-										<progress max="100" value ="25">
-											<div class="progress-bar"><span style="width: 25%">25%</span></div>
-										</progress>
-									</td>
-								</tr>
-								<tr><td>&nbsp;</td></tr>
 								<tr>
 									<td class="title">Unix</td>
 									<td>
@@ -359,46 +362,70 @@
 									</td>
 								</tr>
 								<tr>
-									<td class="title">Suite Office</td>
+									<td class="head2" colspan=2>Databases</td>
+								</tr>
+								</tr>
+									<td class="title">SQL, MySQL, T/SQL, MariaDB, PostgreSQL</td>
 									<td>
 										<progress max="100" value ="95">
 											<div class="progress-bar"><span style="width: 95%">95%</span></div>
 										</progress>
 									</td>
 								</tr>
-								<tr><td>&nbsp;</td></tr>
 								<tr>
-									<td class="title">Photoshop</td>
+									<td class="head2" colspan=2>Industrialization & Platforms</td>
+								</tr>
+								<tr>
+									<td class="title">Git / SVN</td>
 									<td>
-										<progress max="100" value ="40">
-											<div class="progress-bar"><span style="width: 40%">40%</span></div>
+										<progress max="100" value ="95">
+											<div class="progress-bar"><span style="width: 95%">95%</span></div>
 										</progress>
 									</td>
 								</tr>
 								<tr>
-									<td class="head2" colspan=2>LANGUES</td>
-								</tr>
-								<tr>
-									<td class="title">Français <br><img src="fr.png" /></td>
-									<td><span class="title">Langue maternelle</span></td>
-								</tr>
-								<tr>
-									<td class="title">Anglais<br><img src="en.png" /></td>
+									<td class="title">Google Cloud</td>
 									<td>
-										<span class="title">Courant</span>
-										<br><b>Toefl</b> 97/110
-										<br><b>Toeic</b> 825
-										<br>Glyndwr University - Wrexham, Pays de Galles - Eté 2008
-										<br>Concordia University - Montréal, Canada - 2011
-										<br>CACIB - New-York, Etats-Unis - 2014
+										<progress max="100" value ="20">
+											<div class="progress-bar"><span style="width: 20%">20%</span></div>
+										</progress>
 									</td>
 								</tr>
 								<tr>
-									<td class="title">Allemand<br><img src="de.png" /></td>
-									<td><span class="title">Baccalauréat (LV2)</span></td>
+									<td class="title">Docker</td>
+									<td>
+										<progress max="100" value ="60">
+											<div class="progress-bar"><span style="width: 60%">60%</span></div>
+										</progress>
+									</td>
 								</tr>
 								<tr>
-									<td class="head2" colspan=2>CERTIFICATS</td>
+									<td class="title">Jenkins, Maven, Sonar</td>
+									<td>
+										<progress max="100" value ="85">
+											<div class="progress-bar"><span style="width: 85%">85%</span></div>
+										</progress>
+									</td>
+								</tr>
+								<tr>
+									<td class="head2" colspan=2>Communication</td>
+								</tr>
+								<tr>
+									<td class="title"><img src="fr.png" /></td>
+									<td><span class="title">mother tongue</span></td>
+								</tr>
+								<tr>
+									<td class="title"><img src="en.png" /></td>
+									<td>
+										<span class="title">operational</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="title"><img src="de.png" /></td>
+									<td><span class="title">basic</span></td>
+								</tr>
+								<tr>
+									<td class="head2" colspan=2>CERTIFICATES</td>
 								</tr>
 								<tr>
 									<td>Applied Computing</td>
