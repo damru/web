@@ -1,6 +1,13 @@
 html, body {
-	font-size: 13px;
+	font-size: 0.9em;
 	font-family: Calibri;
+	margin: 0;
+	padding: 0;
+}
+table, tr, td, th {
+	margin: 0;
+	padding: 0;
+	border-spacing: 0;
 }
 div.body {
 	background: #ffffff;
@@ -10,99 +17,148 @@ div.body {
 	position: relative;
 	padding: 15px;
 }
+div.damien {
+	width: 100%;
+	padding: 0 0 20px 0;
+}
 table.main {
 }
 table.main tr {
 	vertical-align: top;
 }
-div.table {
+div.background {
 	max-width: 600px;
 }
-div.table tr {
-	vertical-align: top;
-	padding: 10px;
+div.background table {
+	margin-bottom: 20px;
 }
-div.table td {
+div.background .category{
+    border-bottom: 1px solid;
+	border-color: #b6ceb1;
+    text-align: center;
+	font-size: 1.8em;
+}
+div.background tr {
+	vertical-align: top;
+	display: block;
+}
+.position {
+	font-family: 'Museo300' Calibri;
+	font-size: 1.3em;
+	font-weight: bold;
 	padding: 10px 5px;
 }
-.head {
+.category{
 	font-family: 'Museo300' Calibri;
-	background-color: #DBE5F1;
-	font-size: 20px;
 	font-weight: bold;
+	padding: 10px 5px;
 }
 .date {
 	font-weight: bold;
 	width: 55px;
-	padding: 5px;
-}
-.title {
-	font-weight: bold;
-	font-size: 1.1em;
-}
-.esn {
-	font-weight: bold;
-	font-style: italic;
+	padding: 0 5px;
 	font-size: 0.9em;
 }
-.mission {
-	display: inline-block;
-	font-weight: bold;
-	font-size: 1.1em;
-}
-.mission-desc {
-	font-size: 1.1em;
-}
-.mission-skills {
-	display: inline-block;
-	padding: 0 20px 10px 20px;
-	font-weight: italic;
-}
-.subtitle {
-	display: inline-block;
-	color: #B0B0B0;
-	font-weight: bold;
+.date .duration {
+	font-weight: normal;
 	font-style: italic;
-	margin-bottom: 12px;
 }
-.desc {
-
+.school {
+	font-weight: bold;
 }
-.white {
-
+.mission {
+	margin-bottom: 10px;
+}
+.mission .company {
+	display: inline-block;
+	font-weight: bold;
+}
+.mission .tasks ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+    text-align: justify;
+}
+.mission .tasks li::before {
+	content: "•";
+	margin-right: 5px;
+}
+.mission .job-skills {
+	display: inline-block;
+	padding: 10px 20px 0 20px;
+	font-style: italic;
+	font-weight: lighter;
+	font-size: 0.9em;
+}
+.location {
+	display: inline-block;
+	font-size: 0.9em;
+    margin-bottom: 5px;
+}
+.dark-grey {
+    color: #323332;
+}
+.grey {
+    color: #707F70;
+}
+.light-grey {
+    color : #BBBFBB;
 }
 .blue {
 	color: #325886
 }
-div.pre-skills {
-	display: block;
-	position: absolute;
-	top: 80px;
-	left: 635px;
-	background-color: #FFFFFF;
-	max-width: 250px;
-	color: #5387C3;
-	font-size: 30px;
-	font-weight: bold;
+.dark-green {
+    color: #688162;
+}
+.light-green {
+    color: #b6ceb1;
+}
+.green {
+    color: #90B289;
+}
+.white {
+    color: #ffffff;
 }
 div.skills {
 	display: block;
 	position: absolute;
-	top: 110px;
+	top: 127px;
 	left: 635px;
-	background-color: #5387C3;
+	background-color: #b6ceb1;
 	max-width: 250px;
-	color: #ffffff;
-	padding: 0 10px 10px 10px;
+	padding: 10px 0;
+	font-size: 1.1em;
+    color: #f9fcfb;
+    color: #fcfcfc;
 }
-div.skills .head2 {
-	font-family: 'Museo300' Calibri;
-	font-size: 20px;
+div.skills .header {
+    display: block;
+	position: absolute;
+    width: 100%;
+	top: -30px;
+	font-size: 2.3em;
 	font-weight: bold;
-	padding-top: 20px;
+    text-align: center;
+}
+div.skills .category {
+	background-color: #688162;
+	font-size: 1.4em;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+div.skills .title {
+	font-weight: bold;
+}
+div.skills table {
+	width: 100%;
+    margin-bottom: 20px;
 }
 div.skills tr {
 	vertical-align: top;
+}
+div.skills td {
+	width: 50%;
+	padding: 2px 10px;
 }
 div.skills tr td img {
 	width: 100px;

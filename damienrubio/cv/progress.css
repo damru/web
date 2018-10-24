@@ -15,13 +15,13 @@ progress[value] {
 	width: 100%; 
 	height: 15px;
 	/* Although firefox doesn't provide any additional pseudo class to style the progress element container, any style applied here works on the container. */
-	background-color: #323332;
+	background-color: #707F70;
 	border-radius: 3px;
 	box-shadow: 0px 0px 2px rgba(0,0,0,.8) inset;
 	/* Of all IE, only IE10 supports progress element that too partially. It only allows to change the background-color of the progress value using the 'color' attribute. */
-	color : #C7E604;
+	color : #323332;
 	position: relative;
-	margin: 0 0 .5em; 
+	margin: 0 0; 
 }
 
 /*
@@ -30,7 +30,7 @@ Webkit browsers provide two pseudo classes that can be use to style HTML5 progre
 -webkit-progress-value -> To style the progress element value.
 */
 progress[value]::-webkit-progress-bar {
-	background-color: #323332;
+	background-color: #707F70;
 	border-radius:3px;
 	box-shadow: 0px 0px 2px rgba(0,0,0,.8) inset;
 }
@@ -48,7 +48,7 @@ progress[value]::-webkit-progress-value  {
 								rgba(0,0,0,.1) 33%,
 								rgba(0,0,0,.1) 66%,
 								transparent 66%),
-		-webkit-linear-gradient(top, #E5FB8E, #C7E604);
+		-webkit-linear-gradient(top, #323332, #323332);
 }
 @keyframes animate-stripes { 100% { background-position: -100px 0; } }
 
@@ -68,13 +68,13 @@ progress[value]::-moz-progress-bar {
 		-moz-linear-gradient( top,
 							rgba(255, 255, 255, .25),
 							rgba(0,0,0,.2)),
-		-moz-linear-gradient(top, #E5FB8E, #C7E604);
+		-moz-linear-gradient(top, #323332, #323332);
 }
 
 /* Fallback technique styles */
 .progress-bar {
 	background-color: #323232;
-	background-image : linear-gradient(top, #E5FB8E, #C7E604);
+	background-image : linear-gradient(top, #323332, #323332);
 	border-radius: 3px;
 	box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
 
