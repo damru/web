@@ -1,4 +1,4 @@
-webapp:
+nginx:
     restart: always
     #image: troyfontaine/armhf-nginx:latest
     image: nginx:latest
