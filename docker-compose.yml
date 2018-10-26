@@ -1,13 +1,11 @@
 nginx:
     restart: always
-    #image: troyfontaine/armhf-nginx:latest
     image: nginx:latest
     ports:
         - "8080:80"
     volumes:
         # nginx
-        - ./nginx/sites-enabled:/etc/nginx/sites-enabled
-        - ./nginx/conf.d:/etc/nginx/conf.d
+        - ./nginx:/etc/nginx
 
         # websites
         - ./default:/usr/share/nginx/html
@@ -21,8 +19,7 @@ nginx:
 
 php:
     restart: always
-    #image: tobi312/rpi-php:7.0-fpm
-    image: php:latest
+    image: php:7-fpm
     volumes:
         # websites
         - ./default:/usr/share/nginx/html
