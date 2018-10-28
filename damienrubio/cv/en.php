@@ -7,9 +7,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
-		<link href="./fonts/fonts.css" rel="stylesheet" type="text/css" />
-		<link href="./style.css" rel="stylesheet" type="text/css" />
-		<link href="./progress.css" rel="stylesheet" type="text/css" />
+		<link href="fonts/fonts.css" rel="stylesheet" type="text/css" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/progress.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body style="">
 		<div class="body dark-gray">
@@ -20,7 +20,7 @@
 							<span class="dark-green" style="font-size: 30px; font-weight: bold;">Damien Rubio</span>
 						<?php if ($print_contact) echo '<br><br>(514) 915-6290 | <a class="green" href="mailto:job@damienrubio.com">job@damienrubio.com</a> | Montreal, QC, Canada'; ?>
 						</td>
-						<?php if ($print_pic) echo '<td rowspan=5 style="width: 112px; height:135px"><img src="id.png" /></td>'; ?>
+						<?php if ($print_pic) echo '<td rowspan=5 style="width: 112px; height:135px"><img src="img/id.png" /></td>'; ?>
 					</tr>
 				</table>
 			</div>
@@ -448,11 +448,11 @@
 							<div class="category" colspan=2>Communication</div>
 							<table>
 								<tr>
-									<td class="title"><img src="fr.png" /></td>
+									<td class="title"><img src="img/fr.png" /></td>
 									<td><span class="title">mother tongue</span></td>
 								</tr>
 								<tr>
-									<td class="title"><img src="en.png" /></td>
+									<td class="title"><img src="img/en.png" /></td>
 									<td>
 										<span class="title">operational</span>
 									</td>
