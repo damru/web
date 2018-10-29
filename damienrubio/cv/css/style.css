@@ -130,10 +130,10 @@ h1#skills-header {
 }
 .skill h2 {
 	background-color: #688162;
-	font-size: 1.4em;
-    font-weight: normal;
     margin: 0 -3px 10px -3px;
     padding: 10px 8px;
+	font-size: 1.4em;
+    font-weight: normal;
 }
 .skill .label {
 	font-weight: bold;

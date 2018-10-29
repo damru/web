@@ -2,384 +2,504 @@
 	$print_pic=false;
 	$print_contact=true;
 	$print_loisirs=false;
+
+    function durationSince($since) {
+        $start = new DateTime($since);
+        $now = new DateTime("now");
+        $interval = $start->diff($now);
+        $y = $interval->y;
+        $m = $interval->m;
+        $y_label = $y . " year";
+        $m_label = $m . " month";
+        if ($y > 1) $y_label .= "s";
+        if ($m > 1) $m_label .= "s";
+        return $y_label . " " . $m_label; 
+    }
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 	<head>
 		<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
-		<link href="./fonts/fonts.css" rel="stylesheet" type="text/css" />
-		<link href="./style.css" rel="stylesheet" type="text/css" />
-		<link href="./progress.css" rel="stylesheet" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="fonts/fonts.css" rel="stylesheet" type="text/css" />
+		<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/progress.css" rel="stylesheet" type="text/css" />
 	</head>
-	<body style="">
-		<div class="body">
-			<div style="width: 100%">
-				<table style="width: 100%">
-					<tr style="width: 100%">
-						<td><span class="blue" style="font-size: 30px; font-weight: bold;">Damien RUBIO</span></td>
-						<?php if ($print_contact) echo '<td>Téléphone: <a class="blue">(514)915-6290</a><br>Courriel: <a class="blue" href="mailto:job@damienrubio.com">job@damienrubio.com</a></td>'; ?>
-						<?php if ($print_pic) echo '<td rowspan=5 style="width: 112px; height:135px"><img src="id.png" /></td>'; ?>
-					</tr>
-				</table>
+	<body>
+        <div class="text-smaller dark-grey">
+            <div id="personal-details">
+                <h1 class="dark-green">Damien Rubio</h1>
+                <div>(514) 915-6290 | <a class="green" href="mailto:job@damienrubio.com">job@damienrubio.com</a> | Montreal, QC, Canada</div>
 			</div>
-			<table class="main">
-				<tr>
-					<td>
-						<div class="table">
+            <div class="row">
+                <div class="col-12 col-md-4 order-md-9" style="padding: 0 15px;">
+                    <h1 class="light-green" id="skills-header">Skills</h1>
+                    <div class="row" id="skills">
+                        <div class="skill col-12 col-sm-6 col-md-12">
+                            <h2>Architecture / Conception / Methodology</h2>
+                            <table>
+                                <tr>
+                                    <td class="label">UML / Merise</td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:90%">90%</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label">TDD / BDD</td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%">100%</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Agile / Scrum</td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%">100%</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label">API Design</td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%">100%</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label">Microservice</td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%">100%</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label">DevOps</td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%">85%</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="skill col-12 col-sm-6 col-md-12">
+                            <h2>Languages / Frameworks</h2>
 							<table>
 								<tr>
-									<td class="head blue" colspan=2>EXPÉRIENCES PROFESSIONNELLES</td>
-								</tr>
-								<tr>
-									<td class="date blue">
-										Depuis Fév. 2017
-									</td>
+									<td class="label">Java</td>
 									<td>
-										<br><span class="esn">CGI, Contractor (Oct. 2017)</span>
-										<br><span class="subtitle">Montreal, QC, Canada</span>
-										<span class="esn">Addstones, Consultant IT (Sept. 2017)</span>
-										<br><span class="subtitle">Paris, France</span>
-										<br><span class="mission">Société Général CIB, Technical Leader + Développeur</span>
-										<br>Développement backend d'une application en mode DevOps et architecture micro-services (services REST, gateway, service discovery).
-										<ul><li>Java 8, Spring, Spring Boot, OAuth2, Consul, Zuul, Jenkins, Sonar, Git, Docker</li></ul>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%">95%</div>
+										</div>
 									</td>
 								</tr>
 								<tr>
-									<td class="date blue">
-										Oct. 2016 - Fév. 2017
-									</td>
+									<td class="label">Spring / Spring Boot</td>
 									<td>
-										<span class="esn">SFEIR, Consultant IT</span>
-										<br><span class="subtitle">Neuilly sur Seine, France</span>
-										<br><span class="mission">SFEIR, Développeur</span><br>Participation au développement d'une application web "SFEIR People" dédiée aux compétences des collaborateurs.
-										<ul><li>Java 8, Docker, Spring, Spring Boot, Neo4J database, Google Cloud (AppEngine, ComputeEngine)</li></ul>
-										<span class="mission">Generali, Développeur</span><br>Mission Etudes & Développements au sein du centre de service Java de Generali.
-										<br>- Bonnes pratiques<br>Mise en oeuvre de bonnes pratiques pour l'industrialisation du développement.
-										<ul><li>Selenium/Fluentlenium, Jenkins</ul></li>
-										- Front Epargne<br>Développement de webservices REST
-										<ul><li>Java J2EE, Javascript, Angular JS</ul></li>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%">95%</div>
+										</div>
 									</td>
 								</tr>
 								<tr>
-									<td class="date blue">
-										Fév. 2013 - Oct. 2016
-									</td>
+									<td class="label">Hibernate / JPA</td>
 									<td>
-										<span class="esn">Adneom, Consultant IT</span>
-										<br><span class="subtitle">Levallois-Perret, France</span>
-										<br><span class="mission">Crédit Agricole CIB, Développeur</span><br>Mission Etudes & Développements/Support au sein de la trésorerie de Crédit Agricole Corporate & Investment Bank.
-										<br><br><b>Kondor+</b><br>Développements shell, SQL et java autour du progiciel Kondor+. Support niveau 3.
-										<ul><li>Java, Kondor, Scripting shell, STP, Sybase ASE (T/SQL)</ul></li>
-										<br>- Mission de 2 mois à CACIB New-York : Refonte complète de l’architecture CTRLM
-										<ul><li>Scheduler Control-M</ul></li>
-										<br>- Gestion de l’équipe offshore (6 personnes en Inde) et coordination avec l’équipe onshore
-										<br><br><b>BLOFI</b><br>Refonte de l'application afin de migrer de Struts vers Spring et de Java 5 vers Java 7 essentiellement, avec une équipe composée de 6 personnes en Inde et 3 personnes à Paris.
-										<ul><li>Java J2EE, Spring, Hibernate, JUnit, SVN, Maven, Javascript</ul></li>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
+										</div>
 									</td>
 								</tr>
 								<tr>
-									<td class="date blue">
-										2012
-										<br>Mai – Nov.
-									</td>
+									<td class="label">C, C++</td>
 									<td>
-										<span class="mission">BNP Paribas, Développeur (Stage de fin d’études)</span>
-										<br><span class="subtitle">Montreuil, France</span>
-										<br>Développement shell, C++, PowerBuilder, SQL (Sybase).
-										<br>Développements sur l’outil de reporting de la trésorerie de Paris « WARM » (10 personnes) :
-										<br>• Etude et recueil des besoins
-										<br>• Développement et test des modules :
-										<br>• Création, développement et optimisation de procédures stockées (Sybase ASE) sur une volumétrie de plusieurs millions de lignes. Utilisation de tables temporaires, surveillance temps réel et optimisation du code pour réduire un maximum le temps d’exécution
-										<br>• Intégration des données de marché issues des systèmes Front Office (Westminster, Sierra)
-										<br>• Développement de scripts shell pour openservers (interfacage Linux/Windows sur des batchs automatiques)
-										<br>• Développement de dll C++ pour rapatrier des données Front depuis une base Oracle distante vers la base Sybase WARM
-										<br>• Intégration des modules dans l’IHM de WARM (Powerbuilder)
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 30%">30%</div>
+										</div>
 									</td>
 								</tr>
 								<tr>
-									<td class="date blue">
-										2011
-										<br>Avril – Juillet
-									</td>
+									<td class="label">PHP</td>
 									<td>
-										<span class="mission">buzzing light, Développeur web (Stage)</span>
-										<br><span class="subtitle">Paris, France</span>
-										<br>Création d’une application web dédiée aux petits boulots, jobs temporaires et CDD.
-										<br>Développement PHP, HTML, AJAX et MySQL
-										<br>Intervention dans la création de la charte graphique du site.
-										<br>• Géolocalisation via l’API Google. Analyse algorithmique de la position de l’utilisateur afin de lui proposer les annonces autour de chez lui
-										<br>• Création d’un moteur de recherche interne basé sur plusieurs critères : type de contrat, distance, intitulé, pertinence, date etc.
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
+										</div>
 									</td>
 								</tr>
 								<tr>
-									<td class="date blue">
-										2010
-										<br>Juin – Sept.
-									</td>
+									<td class="label">HTML</td>
 									<td>
-										<span class="mission">NDS Technology, Assistant chef de projet marketing (Stage)</span>
-										<br><span class="subtitle">Issy les Moulineaux, France</span>
-										<br>Création d’un intranet pour le service “Sales & Marketing France » grâce à l’utilisation du CMS Drupal.
-										<br>Communication B2B et B2C.
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%">95%</div>
+										</div>
 									</td>
 								</tr>
 								<tr>
-									<td class="date blue">
-										2009
-										<br>Avril - Juin
-									</td>
+									<td class="label">CSS</td>
 									<td>
-										<span class="mission">Association « Comité Français de Cartographie », Développeur web (Stage)</span>
-										<span class="subtitle">Saint Mandé, France</span>
-										<br>Refonte graphique et logicielle du site internet de l’association
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">75%</div>
+										</div>
 									</td>
 								</tr>
 								<tr>
-									<td class="head blue" colspan=2>FORMATIONS</td>
-								</tr>
-								<tr>
-									<td class="date blue">2009 - 2012</td>
+									<td class="label">JavaScript</td>
 									<td>
-										<span class="title">Cycle Ingénieur, ECE Paris<br>Spécialisation Systèmes d’Information et Réseaux</span>
-										<br><span class="subtitle">option Audiovisuel & Médias Numériques</span>
-										<br><i>2009-2012</i> : ECE Paris École d’Ingénieurs - Paris, France
-										<br><i>Sept. – Dec. 2011</i> : Concordia University – Montréal, Canada
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
+										</div>
 									</td>
 								</tr>
 								<tr>
-									<td class="date blue">2007 - 2009</td>
+									<td class="label">Angular</td>
 									<td>
-										<span class="title">DUT Informatique<br>Spécialisation Génie Logiciel</span>
-										<br><span class="subtitle">option Génie Logiciel</span>
-										<br>IUT de Montreuil - Université Paris 8 - Vincennes-Saint-Denis
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 20%">20%</div>
+										</div>
 									</td>
 								</tr>
 								<tr>
-									<td class="date blue">2004 - 2007</td>
+									<td class="label">Bootstrap</td>
 									<td>
-										<span class="title">DEUG Administration Économique et Sociale</span>
-										<br>Université Paris 1 - Panthéon-Sorbonne
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 20%">20%</div>
+										</div>
 									</td>
 								</tr>
 								<tr>
-									<td class="date blue">2004</td>
+									<td class="label">Python</td>
 									<td>
-										<span class="title">Baccalauréat Économique et Social</span>
-										<br><span class="subtitle">option Économie</span>
-										<br>Lycée Romain Rolland - Ivry sur Seine
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 40%">40%</div>
+										</div>
 									</td>
 								</tr>
-								<?php if ($print_loisirs) : ?>
 								<tr>
-									<td class="head blue" colspan=2>LOISIRS</td>
-								</tr>
-								<tr>
-									<td class="date blue">Sports</td>
-									<td>Football, basketball, vô-thuat, natation, parachutisme, roller.</td>
-								</tr>
-								<tr>
-									<td class="date blue">Cinéma</td>
-									<td>Passionné de cinéma, je suis de près l’actualité cinématographique française et étrangère.</td>
-								</tr>
-								<tr>
-									<td class="date blue">Lecture</td>
-									<td>Presse nationale, romans, essais, blogs (veille technologique)</td>
-								</tr>
-								<tr>
-									<td class="date blue">Développement</td>
-									<td>Réalisation de projets web et logiciels : <b>création graphique et programmation</b>.<br>
-									Projets Android et Kinect</td>
-								</tr>
-								<?php endif; ?>
-								<tr>
-									<td></td>
-									<td></td>
+									<td class="label">Shell scripting</td>
+									<td>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
+										</div>
+									</td>
 								</tr>
 							</table>
-						</div>
-					</td>
-					<td>
-						<div class="skills">
+                        </div>
+                        <div class="skill col-12 col-sm-6 col-md-12">
+							<h2>OS</h2>
 							<table>
 								<tr>
-									<td class="head2" colspan=2>COMPÉTENCES<BR> INFORMATIQUES</td>
-								</tr>
-								<tr>
-									<td class="title">UML</td>
+									<td class="label">Unix</td>
 									<td>
-										<progress max="100" value ="90">
-											<div class="progress-bar"><span style="width: 90%">90%</span></div>
-										</progress>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
+										</div>
 									</td>
 								</tr>
 								<tr>
-									<td class="title">Merise</td>
+									<td class="label">Windows</td>
 									<td>
-										<progress max="100" value ="75">
-											<div class="progress-bar"><span style="width: 75%">75%</span></div>
-										</progress>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
+										</div>
 									</td>
-								</tr>
-								<tr><td>&nbsp;</td></tr>
-								<tr>
-									<td class="title">Java</td>
-									<td>
-										<progress max="100" value ="95">
-											<div class="progress-bar"><span style="width: 95%">95%</span></div>
-										</progress>
-									</td>
-								</tr>
-								<tr>
-									<td class="title">Spring, Spring Boot</td>
-									<td>
-										<progress max="100" value ="95">
-											<div class="progress-bar"><span style="width: 95%">95%</span></div>
-										</progress>
-									</td>
-								</tr>
-								<tr><td>&nbsp;</td></tr>
-								</tr>
-									<td class="title">SQL</td>
-									<td>
-										<progress max="100" value ="95">
-											<div class="progress-bar"><span style="width: 95%">90%</span></div>
-										</progress>
-									</td>
-								</tr>
-								<tr><td>&nbsp;</td></tr>
-								<tr>
-									<td class="title">C, C++</td>
-									<td>
-										<progress max="100" value ="40">
-											<div class="progress-bar"><span style="width: 40%">30%</span></div>
-										</progress>
-									</td>
-								</tr>
-								<tr>
-									<td class="title">PHP</td>
-									<td>
-										<progress max="100" value ="90">
-											<div class="progress-bar"><span style="width: 90%">80%</span></div>
-										</progress>
-									</td>
-								</tr>
-								<tr>
-									<td class="title">HTML</td>
-									<td>
-										<progress max="100" value ="95">
-											<div class="progress-bar"><span style="width: 95%">90%</span></div>
-										</progress>
-									</td>
-								</tr>
-								<tr>
-									<td class="title">CSS</td>
-									<td>
-										<progress max="100" value ="90">
-											<div class="progress-bar"><span style="width: 90%">90%</span></div>
-										</progress>
-									</td>
-								</tr>
-								<tr>
-									<td class="title">JavaScript</td>
-									<td>
-										<progress max="100" value ="80">
-											<div class="progress-bar"><span style="width: 80%">80%</span></div>
-										</progress>
-									</td>
-								</tr>
-								<tr><td>&nbsp;</td></tr>
-								<tr>
-									<td class="title">Docker</td>
-									<td>
-										<progress max="100" value ="50">
-											<div class="progress-bar"><span style="width: 50%">50%</span></div>
-										</progress>
-									</td>
-								</tr>
-								<tr>
-									<td class="title">Industrialisation (Jenkins, JUnit, Maven, Sonar)</td>
-									<td>
-										<progress max="100" value ="85">
-											<div class="progress-bar"><span style="width: 85%">85%</span></div>
-										</progress>
-									</td>
-								</tr>
-								<tr>
-									<td class="title">Angular JS</td>
-									<td>
-										<progress max="100" value ="20">
-											<div class="progress-bar"><span style="width: 20%">20%</span></div>
-										</progress>
-									</td>
-								</tr>
-								<tr><td>&nbsp;</td></tr>
-								<tr>
-									<td class="title">Shell</td>
-									<td>
-										<progress max="100" value ="95">
-											<div class="progress-bar"><span style="width: 95%">95%</span></div>
-										</progress>
-									</td>
-								</tr>
-								<tr>
-									<td class="title">Python<br></td>
-									<td>
-										<progress max="100" value ="25">
-											<div class="progress-bar"><span style="width: 25%">25%</span></div>
-										</progress>
-									</td>
-								</tr>
-								<tr><td>&nbsp;</td></tr>
-								<tr>
-									<td class="title">Unix</td>
-									<td>
-										<progress max="100" value ="90">
-											<div class="progress-bar"><span style="width: 90%">90%</span></div>
-										</progress>
-									</td>
-								</tr>
-								<tr>
-									<td class="title">Windows</td>
-									<td>
-										<progress max="100" value ="90">
-											<div class="progress-bar"><span style="width: 90%">90%</span></div>
-										</progress>
-									</td>
-								</tr>
-								<tr>
-									<td class="head2" colspan=2>LANGUES</td>
-								</tr>
-								<tr>
-									<td class="title">Français <br><img src="fr.png" /></td>
-									<td><span class="title">Langue maternelle</span></td>
-								</tr>
-								<tr>
-									<td class="title">Anglais<br><img src="en.png" /></td>
-									<td>
-										<span class="title">Courant</span>
-										<br><b>Toefl</b> 97/110
-										<br><b>Toeic</b> 825
-										<br><b>Glyndwr University</b> - Wrexham, Pays de Galles - Eté 2008
-										<br><b>Concordia University</b> - Montréal, Canada - 2011
-										<br><b>CACIB - New-York</b>, Etats-Unis - 2014
-									</td>
-								</tr>
-								<tr>
-									<td class="title">Allemand<br><img src="de.png" /></td>
-									<td><span class="title">Baccalauréat (LV2)</span></td>
-								</tr>
-								<tr>
-									<td class="head2" colspan=2>CERTIFICATS</td>
-								</tr>
-								<tr>
-									<td>Applied Computing</td>
-									<td>Glyndwr University, Pays de Galles</td>
 								</tr>
 							</table>
-						</div>
-					</td>
-				</tr>
-			</table>
-		</div>
+                        </div>
+                        <div class="skill col-12 col-sm-6 col-md-12">
+							<h2>Databases</h2>
+							<table>
+								<tr>
+									<td class="label">MySQL, TSQL, PostgreSQL</td>
+									<td>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%">95%</div>
+										</div>
+									</td>
+								</tr>
+							</table>
+                        </div>
+                        <div class="skill col-12 col-sm-6 col-md-12">
+							<h2>Industrialization / Platforms</h2>
+							<table>
+								<tr>
+									<td class="label">Git / SVN</td>
+									<td>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%">95%</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="label">Google Cloud</td>
+									<td>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 20%">20%</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="label">AWS</td>
+									<td>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 20%">20%</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="label">Docker</td>
+									<td>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%">60%</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="label">Jenkins, Maven, Sonar</td>
+									<td>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%">85%</div>
+										</div>
+									</td>
+								</tr>
+							</table>
+                        </div>
+                        <div class="skill col-12 col-sm-6 col-md-12">
+                            <h2>Communication</h2>
+							<table>
+								<tr>
+									<td class="label"><img src="img/fr.png" /></td>
+									<td><span class="label">mother tongue</span></td>
+								</tr>
+								<tr>
+									<td class="label"><img src="img/en.png" /></td>
+									<td>
+										<span class="label">operational</span>
+									</td>
+								</tr>
+							</table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8" style="padding: 0 15px;">
+                    <div class="cv-part" id="work-experiences">
+                        <h1 class="light-green">work experience</h1>
+                        <div class="row experience">
+                            <h2 class="col-12 d-block">Senior Software Engineer / Technical Leader</h2>
+                            <div class="col-3 col-sm-2 date text-smaller">
+                                <div class="dark-green"><strong>feb. 2017<br>present</strong></div>
+                                <div class="light-green"><?php echo durationSince("2017-02");?></div>
+                            </div>
+                            <div class="col-9 col-sm-10">
+                                <div class="company">Société Général CIB</div>
+                                <div class="location text-smaller light-green">Montreal, QC, Canada<br>Val-de-Fontenay, France</div>
+                                <ul class="tasks">
+                                    <li>Kickstarted a new project by creating guidelines for development, testing, build etc. in order to provide the future feature teams with strong and common basis.</li>
+                                    <li>Designed a microservice architectured application providing many APIs to process legal contracts and provide services on them.</li>
+                                    <li>Backend development with a TDD/BDD approach. Created integration testings and scenarios with business users and their requirements.
+                                    <li>Successfully created build pipelines in order to have a continuous integration environment and flawlessly deliver in production.</li>
+                                    <li>Contribution to the frontend client development.</li>
+                                </ul>
+                                <ul class="job-skills text-smaller">
+                                    <li>Java</li>
+                                    <li>Spring</li>
+                                    <li>Spring Boot</li>
+                                    <li>OAuth2</li>
+                                    <li>Consul</li>
+                                    <li>Zuul</li>
+                                    <li>Jenkins</li>
+                                    <li>Sonar</li>
+                                    <li>Git</li>
+                                    <li>Maven</li>
+                                    <li>Docker</li>
+                                    <li>Angular</li>
+                                    <li>Python</li>
+                                    <li>BDD</li>
+                                    <li>TDD</li>
+                                    <li>DevOps</li>
+                                </ul>
+                            </div>
+                        </div>  
+                        <div class="row experience">
+                            <h2 class="container-fluid">Software Engineer</h2>
+                            <div class="col-3 col-sm-2 date text-smaller">
+                                <div class="dark-green"><strong>nov. 2016<br>feb. 2017</strong></div>
+                                <div class="light-green">4 months</div>
+                            </div>
+                            <div class="col-9 col-sm-10">
+                                <div class="company">Generali</div>
+                                <div class="location text-smaller light-green">La Plaine Saint-Denis, France</div>
+                                <ul class="tasks">
+                                    <li>Implemented good practices and development guidelines in order to stabilize and standardize all Java applications of the IT department (industrialization, TDD, BDD, intergration testings).</li>
+                                    <li>Migrated an obsolete webservice from Corba to Java.</li>
+                                </ul>
+                                <ul class="job-skills text-smaller">
+                                    <li>J2EE</li>
+                                    <li>Angular JS</li>
+                                    <li>Selenuim/Fluentlenium</li>
+                                    <li>Jenkins</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row experience">
+                            <h2 class="container-fluid">Software Engineer</h2>
+                            <div class="col-3 col-sm-2 date text-smaller">
+                                <div class="dark-green"><strong>oct. 2016<br>nov. 2016</strong></div>
+                                <div class="light-green">1 month</div>
+                            </div>
+                            <div class="col-9 col-sm-10">
+                                <div class="company">SFEIR</div>
+                                <div class="location text-smaller light-green">Neuilly-sur-Seine, France</div>
+                                <ul class="tasks">
+                                    <li>Contribution to the backend development of an application dedicated to the employees skillsets with a graph database and graphic representation.</li>
+                                </ul>
+                                <ul class="job-skills text-smaller">
+                                    <li>Java</li>
+                                    <li>Docker</li>
+                                    <li>Spring</li>
+                                    <li>Spring Boot</li>
+                                    <li>Neo4J Database</li>
+                                    <li>Google Cloud (AppEngine, ComputeEngine)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row experience">
+                            <h2 class="container-fluid">Software Engineer</h2>
+                            <div class="col-3 col-sm-2 date text-smaller">
+                                <div class="dark-green"><strong>feb. 2013<br>oct. 2016</strong></div>
+                                <div class="light-green">3 years 8 months</div>
+                            </div>
+                            <div class="col-9 col-sm-10">
+                                <div class="company">Crédit Agricole CIB</div>
+                                <div class="location text-smaller light-green">Courbevoie, France<br>New-York, NY, USA (2014)</div>
+                                <ul class="tasks">
+                                    <li>Designed and implemented the complete refactoring of inhouse front-to-back booking application from Struts to Spring, and from Java 5 to Java ith teams in Paris and Noida (India).</li>
+                                    <li>Completed the makeover of the CTRLM (scheduler) architecture for CACIB New-York IT Treasury department.</li>
+                                    <li>Study and development for Treasury IT on front-to-back proprietary application Kondor+.</li>
+                                    <li>Handled support L3 and managed offshore team in Noida (6 peoples, India).
+                                </ul>
+                                <ul class="job-skills text-smaller">
+                                    <li>Java</li>
+                                    <li>Spring</li>
+                                    <li>Hibernate</li>
+                                    <li>jUnit</li>
+                                    <li>SVN</li>
+                                    <li>Maven</li>
+                                    <li>JavaScript</li>
+                                    <li>Kondor+ by Misys (formerly by Reuters)</li>
+                                    <li>Shell scripting</li>
+                                    <li>STP</li>
+                                    <li>Sybase ASE (T/SQL)</li>
+                                    <li>CTRLM</li>
+                                    <li>Team Management</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row experience">
+                            <h2 class="container-fluid">Programmer Analyst</h2>
+                            <div class="col-3 col-sm-2 date text-smaller">
+                                <div class="dark-green"><strong>may 2012<br>nov. 2012</strong></div>
+                                <div class="light-green">7 months</div>
+                            </div>
+                            <div class="col-9 col-sm-10">
+                                <div class="company">BNP Paribas</div>
+                                <div class="location text-smaller light-green">Montreuil, France</div>
+                                <ul class="tasks">
+                                    <li>Detailed analysis of business requirements to enhance the reporting tool of the Treasury.</li>
+                                    <li>Development of new reports through the creation of complex stored procedures.</li>
+                                    <li>Optimization of the stored procedures through indexes and complex sql joins with temporary tables.</li>
+                                </ul>
+                                <ul class="job-skills text-smaller">
+                                    <li>SVN</li>
+                                    <li>Shell scripting</li>
+                                    <li>Sybase ASE (T/SQL)</li>
+                                    <li>C++</li>
+                                    <li>Powerbuilder</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row experience">
+                            <h2 class="container-fluid">Web Developper</h2>
+                            <div class="col-3 col-sm-2 date text-smaller">
+                                <div class="dark-green"><strong>apr. 2011<br>jul. 2011</strong></div>
+                                <div class="light-green">6 months</div>
+                            </div>
+                            <div class="col-9 col-sm-10">
+                                <div class="company">buzzing light</div>
+                                <div class="location text-smaller light-green">Paris, France</div>
+                                <ul class="tasks">
+                                    <li>Backend and frontend development for the short-term jobs web and mobile platform <strong><i>Beepjob</i></strong>/li>
+                                    <li>Creation of the search engine based on the user location. Enhancement of this search engine to take into account many criterias (distance, type of contract, relevance)</li>
+                                    <li>Contribution to the design of the visual identity.</li>
+                                </ul>
+                                <ul class="job-skills text-smaller">
+                                    <li>PHP</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>AJAX</li>
+                                    <li>MySQL</li>
+                                    <li>Google Geolocation API</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cv-part" id="education">
+                        <h1 class="light-green">education</h1>
+                        <div class="row experience">
+                            <h2 class="container-fluid">Diplôme d'Ingénieur<span class="eq-diploma grey">5th year degree in Computer Engineering</span></h2>
+                            <div class="col-3 col-sm-2 date text-smaller">
+                                <div class="dark-green"><strong>2009<br>2012</strong></div>
+                            </div>
+                            <div class="col-9 col-sm-10">
+                                <div class="school">ECE Paris École d’Ingénieurs <span class="location text-smaller light-green">Paris, France</span></div>
+                                <div class="dark-green text-smaller">Major Information Technologies</div>
+                                <div class="light-green text-smaller">Minor Audiovisual & Multimedia</div>
+                                <div class="school grey"><strong>Concordia University <i class="text-smaller">(sept. – dec. 2011)</i> <span class="location text-smaller light-green">Montreal, QC, Canada</span></strong></div>
+                                <div class="light-green text-smaller">Computer Science</div>
+                            </div>
+                        </div>  
+                        <div class="row experience">
+                            <h2 class="container-fluid">Diplôme Universitaire de Technologie (DUT) Informatique<span class="eq-diploma grey">2 years technical degree in Computer Engineering</span></h2>
+                            <div class="col-3 col-sm-2 date text-smaller">
+                                <div class="dark-green"><strong>2007<br>2009</strong></div>
+                            </div>
+                            <div class="col-9 col-sm-10">
+                                <div class="school">IUT de Montreuil Université Paris 8 <span class="location text-smaller light-green">Montreuil, France</span></div>
+                                <div class="dark-green text-smaller">Major Software Development</div>
+                                <div class="light-green text-smaller">Minor Software Development</div>
+                                <div class="school grey"><strong>Wrexham Glyndwr University <i class="text-smaller">(jun. – aug. 2008)</i> <span class="location text-smaller light-green">Wrexham, Wales</span></strong></div>
+                                <div class="light-green text-smaller">Applied Computing</div>
+                            </div>
+                        </div>  
+                        <div class="row experience">
+                            <h2 class="container-fluid">Diplôme d'Etudes Universitaires Générales (DEUG) d'Admistration Economique et Sociale<span class="eq-diploma grey">2 years University degree in Administration, Economics and Social Science</span></h2>
+                            <div class="col-3 col-sm-2 date text-smaller">
+                                <div class="dark-green"><strong>2004<br>2007</strong></div>
+                            </div>
+                            <div class="col-9 col-sm-10">
+                                <div class="school">Université Paris 1 Panthéon-Sorbonne <span class="location text-smaller light-green">Paris, France</span></div>
+                            </div>
+                        </div>  
+                        <div class="row experience">
+                            <h2 class="container-fluid">Baccalauréat Economique et Social<span class="eq-diploma grey">French High-School diploma in Economics And Social Science</span></h2>
+                            <div class="col-3 col-sm-2 date text-smaller">
+                                <div class="dark-green"><strong>2001<br>2004</strong></div>
+                            </div>
+                            <div class="col-9 col-sm-10">
+                                <div class="school">Lycée Romain Rolland <span class="location text-smaller light-green">Ivry-sur-Seine, France</span></div>
+                                <div class="dark-green text-smaller">Major Economics</div>
+                            </div>
+                        </div>  
+                </div>
+                </div>
+            </div>
+        </div>
 	</body>
 </html>
