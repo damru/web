@@ -35,14 +35,16 @@
 .white {
     color: #ffffff;
 }
-
+.heart {
+    color: red;
+}
 /****************************
 *** properties
 ****************************/
 body {
     max-width: 880px;
 	font-family: Calibri;
-    margin: 0 auto 50px; auto;
+    margin: 0 auto 20px auto;
     line-height: 1em;
 }
 h1, h2 {
@@ -152,7 +154,17 @@ h1#skills-header {
 .skill .title img {
 	width: 30px;
 }
-
+#powered-by {
+    opacity: 0.5;
+    margin: 40px auto 0 auto;
+    text-align: center;
+}
+#powered-by a {
+    color: #90B289;
+}
+#powered-by a:hover {
+    color: #688162;
+}
 /*
 progress bars
 */

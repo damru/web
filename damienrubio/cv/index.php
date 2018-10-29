@@ -500,6 +500,8 @@
                 </div>
                 </div>
             </div>
+            <div class="container text-smaller" id="powered-by">Crafted with <span class="heart">&hearts;</span><br>and powered by <a href="https://www.docker.com/" target="_blank">Docker</a>, <a href="https://www.nginx.com/" target="_blank">Nginx</a>, <a href="http://www.php.net/" target="_blank">PHP</a> and <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+            </div>
         </div>
 	</body>
 </html>
