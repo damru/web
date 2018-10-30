@@ -379,7 +379,7 @@
                                 <div class="company">Crédit Agricole CIB</div>
                                 <div class="location text-smaller light-green">Courbevoie, France<br>New-York, NY, USA (2014)</div>
                                 <ul class="tasks">
-                                    <li>Designed and implemented the complete refactoring of inhouse front-to-back booking application from Struts to Spring, and from Java 5 to Java ith teams in Paris and Noida (India).</li>
+                                    <li>Designed and implemented the complete refactoring of inhouse front-to-back booking application from Struts to Spring, and from Java 5 to Java with teams in Paris and Noida (India).</li>
                                     <li>Completed the makeover of the CTRLM (scheduler) architecture for CACIB New-York IT Treasury department.</li>
                                     <li>Study and development for Treasury IT on front-to-back proprietary application Kondor+.</li>
                                     <li>Handled support L3 and managed offshore team in Noida (6 peoples, India).
