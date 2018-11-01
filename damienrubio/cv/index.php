@@ -436,7 +436,7 @@
                                 <div class="company">buzzing light</div>
                                 <div class="location text-smaller light-green">Paris, France</div>
                                 <ul class="tasks">
-                                    <li>Backend and frontend development for the short-term jobs web and mobile platform <strong><i>Beepjob</i></strong>/li>
+                                    <li>Backend and frontend development for the short-term jobs web and mobile platform <strong><i>Beepjob</i></strong></li>
                                     <li>Creation of the search engine based on the user location. Enhancement of this search engine to take into account many criterias (distance, type of contract, relevance)</li>
                                     <li>Contribution to the design of the visual identity.</li>
                                 </ul>
