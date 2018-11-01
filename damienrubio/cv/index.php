@@ -22,12 +22,10 @@
 	<head>
 		<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="fonts/fonts.css" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 		<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
-		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/fonts.css" rel="stylesheet" type="text/css" />
 		<link href="css/media.css" rel="stylesheet" type="text/css" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body class="text-smaller dark-grey">
         <div class="container" >
