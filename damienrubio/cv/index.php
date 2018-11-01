@@ -25,19 +25,19 @@
 		<link href="fonts/fonts.css" rel="stylesheet" type="text/css" />
 		<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
 		<link href="css/style.css" rel="stylesheet" type="text/css" />
-		<link href="css/progress.css" rel="stylesheet" type="text/css" />
+		<link href="css/media.css" rel="stylesheet" type="text/css" />
 	</head>
-	<body>
-        <div class="text-smaller dark-grey">
+	<body class="text-smaller dark-grey">
+        <div class="container" >
             <div id="personal-details">
                 <h1 class="dark-green">Damien Rubio</h1>
                 <div>(514) 915-6290 | <a class="green" href="mailto:job@damienrubio.com">job@damienrubio.com</a> | Montreal, QC, Canada</div>
 			</div>
-            <div class="row">
-                <div class="col-12 col-md-4 order-md-9" style="padding: 0 15px;">
+            <div class="d-lg-flex">
+                <div class="order-lg-2 container" id="skills">
                     <h1 class="light-green" id="skills-header">Skills</h1>
-                    <div class="row" id="skills">
-                        <div class="skill col-12 col-sm-6 col-md-12">
+                    <div class="d-flex flex-lg-column flex-wrap justify-content-center" style="position:relative; top: -27px;">
+                        <div class="skill">
                             <h2>Architecture / Conception / Methodology</h2>
                             <table>
                                 <tr>
@@ -90,7 +90,7 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="skill col-12 col-sm-6 col-md-12">
+                        <div class="skill">
                             <h2>Languages / Frameworks</h2>
 							<table>
 								<tr>
@@ -191,7 +191,7 @@
 								</tr>
 							</table>
                         </div>
-                        <div class="skill col-12 col-sm-6 col-md-12">
+                        <div class="skill">
 							<h2>OS</h2>
 							<table>
 								<tr>
@@ -212,7 +212,7 @@
 								</tr>
 							</table>
                         </div>
-                        <div class="skill col-12 col-sm-6 col-md-12">
+                        <div class="skill">
 							<h2>Databases</h2>
 							<table>
 								<tr>
@@ -225,7 +225,7 @@
 								</tr>
 							</table>
                         </div>
-                        <div class="skill col-12 col-sm-6 col-md-12">
+                        <div class="skill">
 							<h2>Industrialization / Platforms</h2>
 							<table>
 								<tr>
@@ -270,7 +270,7 @@
 								</tr>
 							</table>
                         </div>
-                        <div class="skill col-12 col-sm-6 col-md-12">
+                        <div class="skill">
                             <h2>Communication</h2>
 							<table>
 								<tr>
@@ -287,7 +287,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-8" style="padding: 0 15px;">
+                <div class="order-lg-1 container">
                     <div class="cv-part" id="work-experiences">
                         <h1 class="light-green">work experience</h1>
                         <div class="row experience">
@@ -500,7 +500,7 @@
                 </div>
                 </div>
             </div>
-            <div class="container text-smaller" id="powered-by">Crafted with <span class="heart">&hearts;</span><br>and powered by <a href="https://www.docker.com/" target="_blank">Docker</a>, <a href="https://www.nginx.com/" target="_blank">Nginx</a>, <a href="http://www.php.net/" target="_blank">PHP</a> and <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+            <div class="container text-smaller d-print-none" id="powered-by">Crafted with <span class="heart">&hearts;</span><br>and powered by <a href="https://www.docker.com/" target="_blank">Docker</a>, <a href="https://www.nginx.com/" target="_blank">Nginx</a>, <a href="http://www.php.net/" target="_blank">PHP</a> and <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
             </div>
         </div>
 	</body>
