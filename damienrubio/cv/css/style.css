@@ -36,11 +36,10 @@ body {
     line-height: 1em;
 }
 h1, h2 {
-    font-family: 'Museo300' Calibri;
-	font-weight: bold;
+    font-family: "Oswald", sans-serif;
 	padding: 10px 5px 10px 5px;
 }
-div#personal-details {
+#personal-details {
 	padding: 15px;
     margin-bottom: 20px;
     text-align: center;
@@ -48,10 +47,11 @@ div#personal-details {
 .text-smaller {
 	font-size: 0.9em;
 }
-div#personal-details h1 {
+#personal-details h1 {
     padding: 0 0 0 0;
     margin: 0 0 15px 0;
-    font-size: 30px;
+    font-size: 2em;
+    text-transform: uppercase;
 }
 .cv-part {
     margin: 0 0 20px 0;
@@ -63,12 +63,16 @@ div#personal-details h1 {
     font-size: 1.8em;
     text-transform: uppercase;
 }
+.experience {
+    margin-bottom: 1rem;
+}
 .experience h2 {
 	font-size: 1.3em;
     padding: 10px 5px 10px 5px;
 }
 .experience h2 span.eq-diploma {
     display: block;
+    font-size: 0.9em;
 }
 .date {
 	padding: 0 5px;
@@ -89,6 +93,7 @@ ul.tasks {
 ul.job-skills {
 	display: inline-block;
 	padding: 10px 20px 0 20px;
+    margin: 0;
 	font-style: italic;
 	font-weight: lighter;
 }
@@ -104,9 +109,9 @@ ul li::before {
 }
 
 h1#skills-header {
-    font-family: 'Museo300' Calibri;
-	font-size: 2.3em;
+	font-size: 2em;
     text-align: center;
+    text-transform: uppercase;
 }
 #skills {
     max-width: 100%;
@@ -115,8 +120,8 @@ h1#skills-header {
     margin: 0 15px 20px 15px ;
     padding: 10px 0 20px 0;
 	background-color: #b6ceb1;
-    min-width: 250px;
-    max-width: 250px;
+    min-width: 260px;
+    max-width: 260px;
 }
 .skill h2 {
 	background-color: #688162;
@@ -147,6 +152,7 @@ h1#skills-header {
 #powered-by {
     opacity: 0.5;
     margin: 50px auto 20px auto;
+    font-family: "Pacifico", cursive;
     text-align: center;
 }
 #powered-by a {

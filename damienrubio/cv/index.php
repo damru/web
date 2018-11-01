@@ -23,6 +23,8 @@
 		<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="fonts/fonts.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 		<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
 		<link href="css/style.css" rel="stylesheet" type="text/css" />
 		<link href="css/media.css" rel="stylesheet" type="text/css" />
@@ -36,7 +38,7 @@
             <div class="d-lg-flex">
                 <div class="order-lg-2 container" id="skills">
                     <h1 class="light-green" id="skills-header">Skills</h1>
-                    <div class="d-flex flex-lg-column flex-wrap justify-content-center" style="position:relative; top: -27px;">
+                    <div class="d-flex flex-lg-column flex-wrap justify-content-center" style="position:relative; top: -23px;">
                         <div class="skill">
                             <h2>Architecture / Conception / Methodology</h2>
                             <table>
@@ -293,7 +295,7 @@
                         <div class="row experience">
                             <h2 class="col-12 d-block">Senior Software Engineer / Technical Leader</h2>
                             <div class="col-3 col-sm-2 date text-smaller">
-                                <div class="dark-green"><strong>feb. 2017<br>present</strong></div>
+                                <div class="dark-green"><strong>feb. 2017 - present</strong></div>
                                 <div class="light-green"><?php echo durationSince("2017-02");?></div>
                             </div>
                             <div class="col-9 col-sm-10">
@@ -329,7 +331,7 @@
                         <div class="row experience">
                             <h2 class="container-fluid">Software Engineer</h2>
                             <div class="col-3 col-sm-2 date text-smaller">
-                                <div class="dark-green"><strong>nov. 2016<br>feb. 2017</strong></div>
+                                <div class="dark-green"><strong>nov. 2016 - feb. 2017</strong></div>
                                 <div class="light-green">4 months</div>
                             </div>
                             <div class="col-9 col-sm-10">
@@ -350,7 +352,7 @@
                         <div class="row experience">
                             <h2 class="container-fluid">Software Engineer</h2>
                             <div class="col-3 col-sm-2 date text-smaller">
-                                <div class="dark-green"><strong>oct. 2016<br>nov. 2016</strong></div>
+                                <div class="dark-green"><strong>oct. 2016 - nov. 2016</strong></div>
                                 <div class="light-green">1 month</div>
                             </div>
                             <div class="col-9 col-sm-10">
@@ -372,7 +374,7 @@
                         <div class="row experience">
                             <h2 class="container-fluid">Software Engineer</h2>
                             <div class="col-3 col-sm-2 date text-smaller">
-                                <div class="dark-green"><strong>feb. 2013<br>oct. 2016</strong></div>
+                                <div class="dark-green"><strong>feb. 2013 - oct. 2016</strong></div>
                                 <div class="light-green">3 years 8 months</div>
                             </div>
                             <div class="col-9 col-sm-10">
@@ -404,7 +406,7 @@
                         <div class="row experience">
                             <h2 class="container-fluid">Programmer Analyst</h2>
                             <div class="col-3 col-sm-2 date text-smaller">
-                                <div class="dark-green"><strong>may 2012<br>nov. 2012</strong></div>
+                                <div class="dark-green"><strong>may 2012 - nov. 2012</strong></div>
                                 <div class="light-green">7 months</div>
                             </div>
                             <div class="col-9 col-sm-10">
@@ -427,7 +429,7 @@
                         <div class="row experience">
                             <h2 class="container-fluid">Web Developper</h2>
                             <div class="col-3 col-sm-2 date text-smaller">
-                                <div class="dark-green"><strong>apr. 2011<br>jul. 2011</strong></div>
+                                <div class="dark-green"><strong>apr. 2011 - jul. 2011</strong></div>
                                 <div class="light-green">6 months</div>
                             </div>
                             <div class="col-9 col-sm-10">
@@ -455,7 +457,7 @@
                         <div class="row experience">
                             <h2 class="container-fluid">Diplôme d'Ingénieur<span class="eq-diploma grey">5th year degree in Computer Engineering</span></h2>
                             <div class="col-3 col-sm-2 date text-smaller">
-                                <div class="dark-green"><strong>2009<br>2012</strong></div>
+                                <div class="dark-green"><strong>2009 - 2012</strong></div>
                             </div>
                             <div class="col-9 col-sm-10">
                                 <div class="school">ECE Paris École d’Ingénieurs <span class="location text-smaller light-green">Paris, France</span></div>
@@ -468,7 +470,7 @@
                         <div class="row experience">
                             <h2 class="container-fluid">Diplôme Universitaire de Technologie (DUT) Informatique<span class="eq-diploma grey">2 years technical degree in Computer Engineering</span></h2>
                             <div class="col-3 col-sm-2 date text-smaller">
-                                <div class="dark-green"><strong>2007<br>2009</strong></div>
+                                <div class="dark-green"><strong>2007 - 2009</strong></div>
                             </div>
                             <div class="col-9 col-sm-10">
                                 <div class="school">IUT de Montreuil Université Paris 8 <span class="location text-smaller light-green">Montreuil, France</span></div>
@@ -481,7 +483,7 @@
                         <div class="row experience">
                             <h2 class="container-fluid">Diplôme d'Etudes Universitaires Générales (DEUG) d'Admistration Economique et Sociale<span class="eq-diploma grey">2 years University degree in Administration, Economics and Social Science</span></h2>
                             <div class="col-3 col-sm-2 date text-smaller">
-                                <div class="dark-green"><strong>2004<br>2007</strong></div>
+                                <div class="dark-green"><strong>2004 - 2007</strong></div>
                             </div>
                             <div class="col-9 col-sm-10">
                                 <div class="school">Université Paris 1 Panthéon-Sorbonne <span class="location text-smaller light-green">Paris, France</span></div>
@@ -490,7 +492,7 @@
                         <div class="row experience">
                             <h2 class="container-fluid">Baccalauréat Economique et Social<span class="eq-diploma grey">French High-School diploma in Economics And Social Science</span></h2>
                             <div class="col-3 col-sm-2 date text-smaller">
-                                <div class="dark-green"><strong>2001<br>2004</strong></div>
+                                <div class="dark-green"><strong>2001 - 2004</strong></div>
                             </div>
                             <div class="col-9 col-sm-10">
                                 <div class="school">Lycée Romain Rolland <span class="location text-smaller light-green">Ivry-sur-Seine, France</span></div>

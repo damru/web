@@ -2,4 +2,8 @@
     #skills {
         max-width: 280px;
     }
+    .skill {
+        margin-right: 0;
+        margin-left: 0;
+    }
 }
