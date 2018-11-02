@@ -33,7 +33,6 @@
 ****************************/
 body {
 	font-family: Calibri;
-    line-height: 1em;
 }
 h1, h2 {
     font-family: "Oswald", sans-serif;
@@ -67,7 +66,7 @@ h1, h2 {
     margin-bottom: 1rem;
 }
 .experience h2 {
-	font-size: 1.3em;
+	font-size: 1.5em;
     padding: 10px 5px 10px 5px;
 }
 .experience h2 span.eq-diploma {
@@ -81,7 +80,8 @@ h1, h2 {
     margin-bottom: 5px;
 }
 .school, .company {
-	font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.3em;
 }
 ul.tasks {
 	margin: 0;
@@ -114,13 +114,18 @@ h1#skills-header {
     text-transform: uppercase;
 }
 #skills {
+    max-width: 280px;
 }
 .skill {
-    margin: 0 15px 20px 15px ;
+    margin-right: 0;
+    margin-left: 0;
+}
+.skill {
+    margin: 0 0 20px 0 ;
     padding: 10px 0 20px 0;
 	background-color: #b6ceb1;
-    min-width: 260px;
-    max-width: 260px;
+    min-width: 250px;
+    max-width: 250px;
 }
 .skill h2 {
 	background-color: #688162;
