@@ -29,13 +29,13 @@
 		<link href="css/print.css" rel="stylesheet" media="print" type="text/css" />
 	</head>
 	<body class="dark-grey">
-        <div class="container" >
+        <div class="container">
             <div id="personal-details">
                 <h1 class="dark-green">Damien Rubio</h1>
                 <div>(514) 915-6290 | <a class="green" href="mailto:job@damienrubio.com">job@damienrubio.com</a> | Montreal, QC, Canada</div>
 			</div>
             <div class="d-lg-flex d-print-flex">
-                <div class="order-lg-2 container" id="skills">
+                <div class="order-2" id="skills">
                     <h1 class="light-green" id="skills-header">Skills</h1>
                     <div class="d-flex flex-lg-column flex-wrap justify-content-center" style="position:relative; top: -23px;">
                         <div class="skill">
@@ -45,7 +45,7 @@
                                     <td class="label">UML / Merise</td>
                                     <td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:90%">90%</div>
+                                            <div class="progress-bar " style="width:90%">90%</div>
                                         </div>
                                     </td>
                                 </tr>
@@ -53,7 +53,7 @@
                                     <td class="label">TDD / BDD</td>
                                     <td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%">100%</div>
+                                            <div class="progress-bar " style="width: 100%">100%</div>
                                         </div>
                                     </td>
                                 </tr>
@@ -61,7 +61,7 @@
                                     <td class="label">Agile / Scrum</td>
                                     <td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%">100%</div>
+                                            <div class="progress-bar " style="width: 100%">100%</div>
                                         </div>
                                     </td>
                                 </tr>
@@ -69,7 +69,7 @@
                                     <td class="label">API Design</td>
                                     <td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%">100%</div>
+                                            <div class="progress-bar " style="width: 100%">100%</div>
                                         </div>
                                     </td>
                                 </tr>
@@ -77,7 +77,7 @@
                                     <td class="label">Microservice</td>
                                     <td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%">100%</div>
+                                            <div class="progress-bar " style="width: 100%">100%</div>
                                         </div>
                                     </td>
                                 </tr>
@@ -85,7 +85,7 @@
                                     <td class="label">DevOps</td>
                                     <td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%">85%</div>
+                                            <div class="progress-bar " style="width: 85%">85%</div>
                                         </div>
                                     </td>
                                 </tr>
@@ -98,7 +98,7 @@
 									<td class="label">Java</td>
 									<td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%">95%</div>
+                                            <div class="progress-bar " style="width: 95%">95%</div>
 										</div>
 									</td>
 								</tr>
@@ -106,7 +106,7 @@
 									<td class="label">Spring / Spring Boot</td>
 									<td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%">95%</div>
+                                            <div class="progress-bar " style="width: 95%">95%</div>
 										</div>
 									</td>
 								</tr>
@@ -114,7 +114,7 @@
 									<td class="label">Hibernate / JPA</td>
 									<td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
+                                            <div class="progress-bar " style="width: 90%">90%</div>
 										</div>
 									</td>
 								</tr>
@@ -122,7 +122,7 @@
 									<td class="label">C, C++</td>
 									<td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 30%">30%</div>
+                                            <div class="progress-bar " style="width: 30%">30%</div>
 										</div>
 									</td>
 								</tr>
@@ -130,7 +130,7 @@
 									<td class="label">PHP</td>
 									<td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
+                                            <div class="progress-bar " style="width: 90%">90%</div>
 										</div>
 									</td>
 								</tr>
@@ -138,7 +138,7 @@
 									<td class="label">HTML</td>
 									<td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%">95%</div>
+                                            <div class="progress-bar " style="width: 95%">95%</div>
 										</div>
 									</td>
 								</tr>
@@ -146,7 +146,7 @@
 									<td class="label">CSS</td>
 									<td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">75%</div>
+                                            <div class="progress-bar " style="width: 75%">75%</div>
 										</div>
 									</td>
 								</tr>
@@ -154,7 +154,7 @@
 									<td class="label">JavaScript</td>
 									<td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
+                                            <div class="progress-bar " style="width: 80%">80%</div>
 										</div>
 									</td>
 								</tr>
@@ -162,7 +162,7 @@
 									<td class="label">Angular</td>
 									<td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 20%">20%</div>
+                                            <div class="progress-bar " style="width: 20%">20%</div>
 										</div>
 									</td>
 								</tr>
@@ -170,7 +170,7 @@
 									<td class="label">Bootstrap</td>
 									<td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 20%">20%</div>
+                                            <div class="progress-bar " style="width: 20%">20%</div>
 										</div>
 									</td>
 								</tr>
@@ -178,7 +178,7 @@
 									<td class="label">Python</td>
 									<td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 40%">40%</div>
+                                            <div class="progress-bar " style="width: 40%">40%</div>
 										</div>
 									</td>
 								</tr>
@@ -186,7 +186,7 @@
 									<td class="label">Shell scripting</td>
 									<td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
+                                            <div class="progress-bar " style="width: 80%">80%</div>
 										</div>
 									</td>
 								</tr>
@@ -199,7 +199,7 @@
 									<td class="label">Git / SVN</td>
 									<td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%">95%</div>
+                                            <div class="progress-bar " style="width: 95%">95%</div>
 										</div>
 									</td>
 								</tr>
@@ -207,7 +207,7 @@
 									<td class="label">Google Cloud</td>
 									<td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 20%">20%</div>
+                                            <div class="progress-bar " style="width: 20%">20%</div>
 										</div>
 									</td>
 								</tr>
@@ -215,7 +215,7 @@
 									<td class="label">AWS</td>
 									<td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 20%">20%</div>
+                                            <div class="progress-bar " style="width: 20%">20%</div>
 										</div>
 									</td>
 								</tr>
@@ -223,7 +223,7 @@
 									<td class="label">Docker</td>
 									<td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%">60%</div>
+                                            <div class="progress-bar " style="width: 60%">60%</div>
 										</div>
 									</td>
 								</tr>
@@ -231,7 +231,7 @@
 									<td class="label">Jenkins, Maven, Sonar</td>
 									<td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%">85%</div>
+                                            <div class="progress-bar " style="width: 85%">85%</div>
 										</div>
 									</td>
 								</tr>
@@ -244,7 +244,7 @@
 									<td class="label">Unix</td>
 									<td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
+                                            <div class="progress-bar " style="width: 90%">90%</div>
 										</div>
 									</td>
 								</tr>
@@ -252,7 +252,7 @@
 									<td class="label">Windows</td>
 									<td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
+                                            <div class="progress-bar " style="width: 90%">90%</div>
 										</div>
 									</td>
 								</tr>
@@ -265,7 +265,7 @@
 									<td class="label">MySQL, TSQL, PostgreSQL</td>
 									<td>
                                         <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%">95%</div>
+                                            <div class="progress-bar " style="width: 95%">95%</div>
 										</div>
 									</td>
 								</tr>
@@ -288,16 +288,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="order-lg-1 container" id="background">
+                <div class="order-1" id="background">
                     <div class="cv-part" id="work-experiences">
                         <h1 class="light-green">work experience</h1>
                         <div class="row experience">
                             <h2 class="col-12 d-block">Senior Software Engineer / Technical Leader</h2>
-                            <div class="col-3 col-sm-2 date text-smaller">
+                            <div class="col-2 date text-smaller">
                                 <div class="dark-green"><strong>feb. 2017 - present</strong></div>
                                 <div class="light-green"><?php echo durationSince("2017-02");?></div>
                             </div>
-                            <div class="col-9 col-sm-10">
+                            <div class="col-10">
                                 <div class="company">Société Général CIB</div>
                                 <div class="location text-smaller light-green">Montreal, QC, Canada<br>Val-de-Fontenay, France</div>
                                 <ul class="tasks">
@@ -329,11 +329,11 @@
                         </div>  
                         <div class="row experience">
                             <h2 class="container-fluid">Software Engineer</h2>
-                            <div class="col-3 col-sm-2 date text-smaller">
+                            <div class="col-2 date text-smaller">
                                 <div class="dark-green"><strong>nov. 2016 - feb. 2017</strong></div>
                                 <div class="light-green">4 months</div>
                             </div>
-                            <div class="col-9 col-sm-10">
+                            <div class="col-10">
                                 <div class="company">Generali</div>
                                 <div class="location text-smaller light-green">La Plaine Saint-Denis, France</div>
                                 <ul class="tasks">
@@ -350,11 +350,11 @@
                         </div>
                         <div class="row experience">
                             <h2 class="container-fluid">Software Engineer</h2>
-                            <div class="col-3 col-sm-2 date text-smaller">
+                            <div class="col-2 date text-smaller">
                                 <div class="dark-green"><strong>oct. 2016 - nov. 2016</strong></div>
                                 <div class="light-green">1 month</div>
                             </div>
-                            <div class="col-9 col-sm-10">
+                            <div class="col-10">
                                 <div class="company">SFEIR</div>
                                 <div class="location text-smaller light-green">Neuilly-sur-Seine, France</div>
                                 <ul class="tasks">
@@ -372,11 +372,11 @@
                         </div>
                         <div class="row experience">
                             <h2 class="container-fluid">Software Engineer</h2>
-                            <div class="col-3 col-sm-2 date text-smaller">
+                            <div class="col-2 date text-smaller">
                                 <div class="dark-green"><strong>feb. 2013 - oct. 2016</strong></div>
                                 <div class="light-green">3 years 8 months</div>
                             </div>
-                            <div class="col-9 col-sm-10">
+                            <div class="col-10">
                                 <div class="company">Crédit Agricole CIB</div>
                                 <div class="location text-smaller light-green">Courbevoie, France<br>New-York, NY, USA (2014)</div>
                                 <ul class="tasks">
@@ -404,11 +404,11 @@
                         </div>
                         <div class="row experience">
                             <h2 class="container-fluid">Programmer Analyst</h2>
-                            <div class="col-3 col-sm-2 date text-smaller">
+                            <div class="col-2 date text-smaller">
                                 <div class="dark-green"><strong>may 2012 - nov. 2012</strong></div>
                                 <div class="light-green">7 months</div>
                             </div>
-                            <div class="col-9 col-sm-10">
+                            <div class="col-10">
                                 <div class="company">BNP Paribas</div>
                                 <div class="location text-smaller light-green">Montreuil, France</div>
                                 <ul class="tasks">
@@ -427,11 +427,11 @@
                         </div>
                         <div class="row experience">
                             <h2 class="container-fluid">Web Developper</h2>
-                            <div class="col-3 col-sm-2 date text-smaller">
+                            <div class="col-2 date text-smaller">
                                 <div class="dark-green"><strong>apr. 2011 - jul. 2011</strong></div>
                                 <div class="light-green">6 months</div>
                             </div>
-                            <div class="col-9 col-sm-10">
+                            <div class="col-10">
                                 <div class="company">buzzing light</div>
                                 <div class="location text-smaller light-green">Paris, France</div>
                                 <ul class="tasks">
@@ -455,10 +455,10 @@
                         <h1 class="light-green">education</h1>
                         <div class="row experience">
                             <h2 class="container-fluid">Diplôme d'Ingénieur<span class="eq-diploma grey">5th year degree in Computer Engineering</span></h2>
-                            <div class="col-3 col-sm-2 date text-smaller">
+                            <div class="col-2 date text-smaller">
                                 <div class="dark-green"><strong>2009 - 2012</strong></div>
                             </div>
-                            <div class="col-9 col-sm-10">
+                            <div class="col-10">
                                 <div class="school">ECE Paris École d’Ingénieurs <span class="location text-smaller light-green">Paris, France</span></div>
                                 <div class="dark-green text-smaller">Major Information Technologies</div>
                                 <div class="light-green text-smaller">Minor Audiovisual & Multimedia</div>
@@ -468,10 +468,10 @@
                         </div>  
                         <div class="row experience">
                             <h2 class="container-fluid">Diplôme Universitaire de Technologie (DUT) Informatique<span class="eq-diploma grey">2 years technical degree in Computer Engineering</span></h2>
-                            <div class="col-3 col-sm-2 date text-smaller">
+                            <div class="col-2 date text-smaller">
                                 <div class="dark-green"><strong>2007 - 2009</strong></div>
                             </div>
-                            <div class="col-9 col-sm-10">
+                            <div class="col-10">
                                 <div class="school">IUT de Montreuil Université Paris 8 <span class="location text-smaller light-green">Montreuil, France</span></div>
                                 <div class="dark-green text-smaller">Major Software Development</div>
                                 <div class="light-green text-smaller">Minor Software Development</div>
@@ -481,27 +481,29 @@
                         </div>  
                         <div class="row experience">
                             <h2 class="container-fluid">Diplôme d'Etudes Universitaires Générales (DEUG) d'Admistration Economique et Sociale<span class="eq-diploma grey">2 years University degree in Administration, Economics and Social Science</span></h2>
-                            <div class="col-3 col-sm-2 date text-smaller">
+                            <div class="col-2 date text-smaller">
                                 <div class="dark-green"><strong>2004 - 2007</strong></div>
                             </div>
-                            <div class="col-9 col-sm-10">
+                            <div class="col-10">
                                 <div class="school">Université Paris 1 Panthéon-Sorbonne <span class="location text-smaller light-green">Paris, France</span></div>
                             </div>
                         </div>  
                         <div class="row experience">
                             <h2 class="container-fluid">Baccalauréat Economique et Social<span class="eq-diploma grey">French High-School diploma in Economics And Social Science</span></h2>
-                            <div class="col-3 col-sm-2 date text-smaller">
+                            <div class="col-2 date text-smaller">
                                 <div class="dark-green"><strong>2001 - 2004</strong></div>
                             </div>
-                            <div class="col-9 col-sm-10">
+                            <div class="col-10">
                                 <div class="school">Lycée Romain Rolland <span class="location text-smaller light-green">Ivry-sur-Seine, France</span></div>
                                 <div class="dark-green text-smaller">Major Economics</div>
                             </div>
                         </div>  
                 </div>
                 </div>
+            
             </div>
-            <div class="container text-smaller d-print-none" id="powered-by">Crafted with <span class="heart">&hearts;</span><br>and powered by <a href="https://www.docker.com/" target="_blank">Docker</a>, <a href="https://www.nginx.com/" target="_blank">Nginx</a>, <a href="http://www.php.net/" target="_blank">PHP</a> and <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+            <div class="container-fluid text-smaller d-print-none" id="powered-by">
+                Crafted with <span class="heart">&hearts;</span><br>and powered by <a href="https://www.docker.com/" target="_blank">Docker</a>, <a href="https://www.nginx.com/" target="_blank">Nginx</a>, <a href="http://www.php.net/" target="_blank">PHP</a> and <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
             </div>
         </div>
 	</body>
