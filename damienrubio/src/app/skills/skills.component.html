@@ -1,0 +1,13 @@
+<div class="skill">
+    <h2>{{skills.name}}</h2>
+    <table>
+        <tr *ngFor="let skill of skills.skills">
+            <td class="label">{{skill.name}}</td>
+            <td>
+                <div class="progress">
+                    <div class="progress-bar " style="width:{{skill.levelBase100}}%">{{skill.levelBase100}}%</div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
