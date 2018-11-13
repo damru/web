@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Skills } from '../skills';
 import { SKILLS } from '../mock-skills';
 
 @Component({

@@ -38,12 +38,12 @@ h1, h2 {
     font-family: "Oswald", sans-serif;
 	padding: 10px 5px 10px 5px;
 }
+.text-smaller {
+	font-size: 0.9em;
+}
 #personal-details {
     margin: 30px auto 40px auto;
     text-align: center;
-}
-.text-smaller {
-	font-size: 0.9em;
 }
 #personal-details h1 {
     padding: 0 0 0 0;
@@ -107,14 +107,14 @@ ul li::before {
 	margin-right: 5px;
 }
 
+#skills {
+    max-width: 280px;
+    margin-left: 30px;
+}
 h1#skills-header {
 	font-size: 2em;
     text-align: center;
     text-transform: uppercase;
-}
-#skills {
-    max-width: 280px;
-    margin-left: 30px;
 }
 .skill {
 	background-color: #b6ceb1;
