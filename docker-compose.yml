@@ -1,6 +1,6 @@
 nginx:
     restart: always
-    image: nginx:latest
+    image: nginx:alpine
     ports:
         - "8080:80"
     volumes:
@@ -19,7 +19,7 @@ nginx:
 
 php:
     restart: always
-    image: php:7-fpm
+    image: php:7-fpm-alpine
     volumes:
         # websites
         - ./default:/usr/share/nginx/html
