@@ -1,6 +1,6 @@
 import { Skill } from './skill';
 
-export class Skills {
+export class SkillCategory {
     id: number;
     name: string;
     skills: Array<Skill>;

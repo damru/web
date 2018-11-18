@@ -1,10 +1,10 @@
 <div id="skills">
     <h1 class="light-green" id="skills-header">Skills</h1>
     <div class="d-flex flex-lg-column flex-wrap justify-content-center" style="position:relative; top: -23px;">
-        <div class="skill" *ngFor="let skills of skills">
-            <h2>{{skills.name}}</h2>
+        <div class="skill" *ngFor="let skillCategory of skillCategories">
+            <h2>{{skillCategory.name}}</h2>
             <table>
-                <tr *ngFor="let skill of skills.skills">
+                <tr *ngFor="let skill of skillCategory.skills">
                     <td class="label">{{skill.name}}</td>
                     <td>
                         <div class="progress">

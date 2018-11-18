@@ -1,5 +1,5 @@
 import { Skill } from './skill';
-import { Skills } from './skills';
+import { SkillCategory } from './skill-category';
 
 const SKILL_LIST1: Skill[] = [
     { id: 1, name: 'UML / Merise', levelBase100: 90, order: 0 },
@@ -41,7 +41,7 @@ const SKILL_LIST5: Skill[] = [
     { id: 26, name: 'MySQL, TSQL, PostgreSQL', levelBase100: 90, order: 0 }
 ];
 
-export const SKILLS: Skills[] = [
+export const SKILL_CATEGORIES: SkillCategory[] = [
     { id: 1, name: 'Architecture / Conception / Methodology', skills: SKILL_LIST1, order: 0 },
     { id: 2, name: 'Languages / Frameworks', skills: SKILL_LIST2, order: 0 },
     { id: 3, name: 'Industrialization / Platforms', skills: SKILL_LIST3, order: 0 },

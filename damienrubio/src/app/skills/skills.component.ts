@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Skills } from '../skills';
-import { SKILLS } from '../mock-skills';
+import { Skill } from '../skill';
+import { SkillCategory } from '../skill-category';
+import { SkillService } from './skill.service';
 
 @Component({
     selector: 'app-skills',
@@ -9,11 +10,15 @@ import { SKILLS } from '../mock-skills';
 })
 export class SkillsComponent implements OnInit {
 
-    skills = SKILLS;
+    skillCategories: SkillCategory[];
 
-    constructor() { }
+    constructor(private skillService: SkillService) { }
 
     ngOnInit() {
+        this.getSkillCategories();
     }
 
+    getSkillCategories(): void {
+        this.skillCategories = this.skillService.getSkillCategories();
+    }
 }

@@ -1,15 +1,33 @@
 import { Component, OnInit } from '@angular/core';
+import { DateService } from '../date.service';
 
 @Component({
-  selector: 'app-experiences',
-  templateUrl: './experiences.component.html',
-  styleUrls: ['./experiences.component.css']
+    selector: 'app-experiences',
+    templateUrl: './experiences.component.html',
+    styleUrls: ['./experiences.component.css']
 })
 export class ExperiencesComponent implements OnInit {
 
-  constructor() { }
+    constructor(private dateService: DateService) { }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
+
+    getDuration(from: string, to: string): String {
+        const dateFrom = from ? new Date(from) : new Date();
+        const dateTo = to ? new Date(to) : new Date();
+        const diff = this.dateService.diff(dateFrom, dateTo);
+        const y =   diff.years > 0 ?
+                        diff.years > 1 ?
+                            diff.years + ' years '
+                            : diff.years + ' year '
+                        : '';
+        const m =   diff.months > 0 ?
+                        diff.months > 1 ?
+                            diff.months + ' months '
+                            : diff.months + ' month '
+                        : '';
+        return y + m;
+    }
 
 }
