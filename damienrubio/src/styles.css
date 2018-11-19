@@ -45,6 +45,7 @@
 ****************************/
 body {
 	font-family: Calibri;
+    min-width: 500px;
 }
 h1, h2 {
     font-family: "Oswald", sans-serif;
@@ -73,6 +74,8 @@ h1, h2 {
 ****************************/
 .cv-part {
     margin: 0 0 40px 0;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .cv-part h1 {
     border-bottom: 1px solid;

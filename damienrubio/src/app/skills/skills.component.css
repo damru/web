@@ -72,3 +72,18 @@ progress bars
     }
 
 }
+
+@media print  
+{
+    div {
+        float: none !important;
+    }
+    
+    .skill{
+        display: inline-block;
+        float: none !important;
+        page-break-inside: avoid;
+        break-inside: avoid;
+        break-before: always;
+    }
+}

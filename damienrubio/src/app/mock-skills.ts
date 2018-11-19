@@ -26,8 +26,8 @@ const SKILL_LIST2: Skill[] = [
 ];
 const SKILL_LIST3: Skill[] = [
     { id: 19, name: 'Git / SVN', levelBase100: 90, order: 0 },
-    { id: 20, name: 'AWS', levelBase100: 20, order: 0 },
-    { id: 21, name: 'Google Cloud', levelBase100: 20, order: 0 },
+    // { id: 20, name: 'AWS', levelBase100: 20, order: 0 },
+    { id: 21, name: 'Google Cloud', levelBase100: 10, order: 0 },
     { id: 22, name: 'Docker', levelBase100: 60, order: 0 },
     { id: 23, name: 'Jenkins, Maven, Sonar', levelBase100: 85, order: 0 }
 ];
@@ -38,7 +38,7 @@ const SKILL_LIST4: Skill[] = [
 ];
 
 const SKILL_LIST5: Skill[] = [
-    { id: 26, name: 'MySQL, TSQL, PostgreSQL', levelBase100: 90, order: 0 }
+    { id: 26, name: 'MySQL, T/SQL, PostgreSQL', levelBase100: 90, order: 0 }
 ];
 
 export const SKILL_CATEGORIES: SkillCategory[] = [

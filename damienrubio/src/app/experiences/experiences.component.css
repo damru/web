@@ -56,3 +56,9 @@ ul li::before {
 	margin-left: 5px;
 }
 
+.experience .col-10 {
+    margin-bottom: 1em;
+}
+.experience .col-10:last-child {
+    margin-bottom: 0;
+}
