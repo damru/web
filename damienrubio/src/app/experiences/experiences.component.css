@@ -1,0 +1,64 @@
+.experience {
+    margin-bottom: 1rem;
+}
+.experience h2 {
+	font-size: 1.5em;
+    padding: 10px 5px 10px 5px;
+}
+.experience h2 span.eq-diploma {
+    display: block;
+    font-size: 0.9em;
+}
+.date {
+	padding: 0.5em 5px 0 5px;
+    border-right: 1px dotted #b6ceb1;
+}
+.date::after {
+    position: absolute;
+    top: 1em;
+    right: -5px;
+    width: 10px;
+    height: 10px;
+    content: ''; 
+    background-color: #b6ceb1;
+    border-radius: 50%;
+}
+.location {
+    margin-bottom: 5px;
+}
+.school, .company {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.3em;
+}
+ul.tasks {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+    text-align: justify;
+    line-height: 1.2em;
+}
+ul.job-skills {
+	display: inline-block;
+	padding: 10px 20px 0 20px;
+    margin: 0;
+	font-style: italic;
+	font-weight: lighter;
+}
+ul.job-skills li:first-child::before {
+	content: "";
+}
+ul.job-skills li {
+    display: inline-block;
+}
+ul li::before {
+	content: "•";
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.experience .col-10 {
+    margin-bottom: 1em;
+}
+.experience .col-10:last-child {
+    margin-bottom: 0;
+}

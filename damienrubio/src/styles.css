@@ -1,0 +1,103 @@
+/****************************
+*** bootstrap
+****************************/
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+/****************************
+*** fonts
+****************************/
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+/****************************
+*** colors
+****************************/
+.dark-grey {
+    color: #323332;
+}
+.grey {
+    color: #707F70;
+}
+.light-grey {
+    color : #BBBFBB;
+}
+.blue {
+	color: #325886
+}
+.dark-green {
+    color: #688162;
+}
+.light-green {
+    color: #b6ceb1;
+}
+.green {
+    color: #90B289;
+}
+.white {
+    color: #ffffff;
+}
+.heart {
+    color: red;
+}
+
+/****************************
+*** basics
+****************************/
+body {
+	font-family: Calibri;
+    min-width: 500px;
+}
+h1, h2 {
+    font-family: "Oswald", sans-serif;
+	padding: 10px 5px 10px 5px;
+}
+.text-smaller {
+	font-size: 0.9em;
+}
+
+/****************************
+*** header
+****************************/
+#personal-details {
+    margin: 30px auto 40px auto;
+    text-align: center;
+}
+#personal-details h1 {
+    padding: 0 0 0 0;
+    margin: 0 0 15px 0;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+/****************************
+*** cv components
+****************************/
+.cv-part {
+    margin: 0 0 40px 0;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.cv-part h1 {
+    border-bottom: 1px solid;
+	border-color: #b6ceb1;
+    text-align: center;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+/****************************
+*** footer
+****************************/
+#powered-by {
+    opacity: 0.5;
+    font-family: "Pacifico", cursive;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+#powered-by a {
+    color: #90B289;
+}
+#powered-by a:hover {
+    color: #688162;
+}

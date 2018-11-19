@@ -1,0 +1,33 @@
+<div id="skills">
+    <h1 class="light-green" id="skills-header">Skills</h1>
+    <div class="d-flex flex-lg-column flex-wrap justify-content-center" style="position:relative; top: -23px;">
+        <div class="skill" *ngFor="let skillCategory of skillCategories">
+            <h2>{{skillCategory.name}}</h2>
+            <table>
+                <tr *ngFor="let skill of skillCategory.skills">
+                    <td class="label">{{skill.name}}</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar" [style.width.%]="skill.levelBase100">{{skill.levelBase100}}%</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="skill">
+            <h2>Communication</h2>
+            <table>
+                <tr>
+                    <td class="label"><img src="assets/img/fr.png" /></td>
+                    <td><span class="label">mother tongue</span></td>
+                </tr>
+                <tr>
+                    <td class="label"><img src="assets/img/en.png" /></td>
+                    <td>
+                        <span class="label">operational</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

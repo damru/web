@@ -1,0 +1,89 @@
+#skills {
+    max-width: 280px;
+    margin-left: 30px;
+}
+h1#skills-header {
+	font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.skill {
+	background-color: #b6ceb1;
+    border-radius: 7px;
+    margin: 0 0 20px 0 ;
+    padding: 10px 0 20px 0;
+    min-width: 250px;
+    max-width: 250px;
+}
+.skill h2 {
+	background-color: #688162;
+    border-radius: 7px;
+    margin: 0 -3px 10px -3px;
+    padding: 10px 8px;
+	font-size: 1.4em;
+    font-weight: normal;
+    color: #fcfcfc;
+}
+.skill .label {
+	font-weight: bold;
+}
+.skill table {
+    width: 100%;
+}
+.skill table tr {
+    width: 100%
+}
+.skill table td {
+	width: 50%;
+    max-width: 50%;
+	padding: 2px 10px;
+    vertical-align: top;
+}
+.skill .title img {
+	width: 30px;
+}
+
+/*
+progress bars
+*/
+.progress {
+    background-color: #707F70;
+	box-shadow: 0px 0px 2px rgba(0,0,0,.8) inset;
+}
+.progress-bar {
+    background-color: #323332;
+	border-radius: 3px;
+    text-indent: -9999px; 
+}
+
+/*
+* to large screen
+*/
+@media (max-width: 991.98px) {
+    
+    #skills {
+        max-width: 100%;
+        margin-left:auto;
+    }
+    
+    .skill {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+}
+
+@media print  
+{
+    div {
+        float: none !important;
+    }
+    
+    .skill{
+        display: inline-block;
+        float: none !important;
+        page-break-inside: avoid;
+        break-inside: avoid;
+        break-before: always;
+    }
+}
