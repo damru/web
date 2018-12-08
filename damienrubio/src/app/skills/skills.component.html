@@ -4,9 +4,9 @@
         <div class="skill" *ngFor="let skillCategory of skillCategories">
             <h2>{{skillCategory.name}}</h2>
             <table>
-                <tr *ngFor="let skill of skillCategory.skills">
-                    <td class="label">{{skill.name}}</td>
-                    <td>
+                <tr *ngFor="let skill of skills">
+                    <td *ngIf="skill.categoryId === skillCategory.id" class="label">{{skill.name}}</td>
+                    <td *ngIf="skill.categoryId === skillCategory.id">
                         <div class="progress">
                             <div class="progress-bar" [style.width.%]="skill.levelBase100">{{skill.levelBase100}}%</div>
                         </div>
