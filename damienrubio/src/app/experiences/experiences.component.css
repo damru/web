@@ -9,13 +9,13 @@
     display: block;
     font-size: 0.9em;
 }
-.date {
+.timeline {
 	padding: 0.5em 5px 0 5px;
     border-right: 1px dotted #b6ceb1;
 }
-.date::after {
+.timeline::after {
     position: absolute;
-    top: 1em;
+    top: calc(0.5em + 0.5em); /* padding-top + 0.5em */
     right: -5px;
     width: 10px;
     height: 10px;
