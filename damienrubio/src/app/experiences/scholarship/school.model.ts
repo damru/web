@@ -9,8 +9,11 @@ export class School implements Experience {
 
     diploma: string;
     diploma_ca: string;
+
     school: string;
     major: string;
+    major_fr: string;
     minor: string;
+    minor_fr: string;
 
 }

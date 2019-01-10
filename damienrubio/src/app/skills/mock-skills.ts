@@ -27,13 +27,13 @@ export const SKILLS: Skill[] = [
     { id: 23, name: 'Jenkins, Maven, Sonar', levelBase100: 85, order: 0, categoryId: 3 },
     { id: 24, name: 'Unix', levelBase100: 85, order: 0, categoryId: 4 },
     { id: 25, name: 'Windows', levelBase100: 85, order: 0, categoryId: 4 },
-    { id: 26, name: 'MySQL, T/SQL, PostgreSQL', levelBase100: 90, order: 0 , categoryId: 5}
+    { id: 26, name: 'MySQL, T/SQL, PostgreSQL', levelBase100: 90, order: 0, categoryId: 5 }
 ];
 
 export const SKILL_CATEGORIES: SkillCategory[] = [
-    { id: 1, name: 'Architecture / Conception / Methodology', order: 0 },
-    { id: 2, name: 'Languages / Frameworks', order: 0 },
-    { id: 3, name: 'Industrialization / Platforms', order: 0 },
-    { id: 4, name: 'OS', order: 0 },
-    { id: 5, name: 'Databases', order: 0 }
+    { id: 1, name: 'Architecture / Conception / Methodology', name_fr: 'Architecture / Conception / Méthodologie', order: 0 },
+    { id: 2, name: 'Languages / Frameworks', name_fr: 'Langages / Frameworks', order: 0 },
+    { id: 3, name: 'Industrialization / Platforms', name_fr: 'Industrialisation / Plateformes', order: 0 },
+    { id: 4, name: 'OS', name_fr: 'OS', order: 0 },
+    { id: 5, name: 'Databases', name_fr: 'Bases de données', order: 0 }
 ];

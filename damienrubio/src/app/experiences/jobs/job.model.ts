@@ -6,9 +6,9 @@ export class Job implements Experience {
     startDate: string;
     endDate: string;
     location: string;
-
     company: string;
     tasks: string[];
+    tasks_fr: string[];
     skills: string[];
 
 }

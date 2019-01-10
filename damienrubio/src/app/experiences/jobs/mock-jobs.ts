@@ -12,7 +12,8 @@ export const JOBS: Job[] = [
             'Successfully created build pipelines in order to have a continuous integration environment and flawlessly deliver in production.',
             'Contribution to the frontend client development.'
         ],
-        skills: ['Java', 'Spring', 'Spring Boot', 'OAuth2', 'Consul', 'Zuul', 'Jenkins', 'Sonar', 'Git', 'Maven', 'Docker', 'Angular', 'Python', 'BDD', 'TDD', 'DevOps']
+        skills: ['Java', 'Spring', 'Spring Boot', 'OAuth2', 'Consul', 'Zuul', 'Jenkins', 'Sonar', 'Git', 'Maven', 'Docker', 'Angular', 'Python', 'BDD', 'TDD', 'DevOps'],
+        tasks_fr: []
     },
     {
         id: i++, startDate: '2016-11-01', endDate: '2017-02-01', location: 'La Plaine Saint-Denis, France', company: 'Generali',
@@ -20,7 +21,8 @@ export const JOBS: Job[] = [
             'Implemented good practices and development guidelines in order to stabilize and standardize all Java applications of the IT department (industrialization, TDD, BDD, intergration testings).',
             'Migrated an obsolete webservice from Corba to Java.'
         ],
-        skills: ['J2EE', 'Anugular JS', 'Selenuim/Fluentlenium', 'Jenkins']
+        skills: ['J2EE', 'Anugular JS', 'Selenuim/Fluentlenium', 'Jenkins'],
+        tasks_fr: []
     },
     {
         id: i++, startDate: '2016-10-01', endDate: '2016-11-01', location: 'Neuilly-sur-Seine, France', company: 'SFEIR',
@@ -28,7 +30,8 @@ export const JOBS: Job[] = [
             'Contribution to the backend development of an application dedicated to the employees skillsets with a graph database and graphic representation.',
             'Migrated an obsolete webservice from Corba to Java.'
         ],
-        skills: ['', '']
+        skills: ['', ''],
+        tasks_fr: []
     },
     {
         id: i++, startDate: '2013-02-01', endDate: '2016-10-01', location: 'Courbevoie, France', company: 'Crédit Agricole CIB',
@@ -39,7 +42,8 @@ export const JOBS: Job[] = [
             'Handled support L3 and managed offshore team in Noida (6 peoples, India).'
         ],
         skills: ['Java', 'Spring', 'Hibernate', 'jUnit' ,'SVN', 'Maven', 'JavaScript', 'Kondor+ by Misys (formerly by Reuters)',
-        'Shell scripting', 'STP', 'Sybase ASE (T/SQL)', 'CTRLM', 'Team Management']
+        'Shell scripting', 'STP', 'Sybase ASE (T/SQL)', 'CTRLM', 'Team Management'],
+        tasks_fr: []
     },
     {
         id: i++, startDate: '2012-05-01', endDate: '2012-11-01', location: 'Montreuil, France', company: 'BNP Paribas',
@@ -48,7 +52,8 @@ export const JOBS: Job[] = [
             'Development of new reports through the creation of complex stored procedures.',
             ' Optimization of the stored procedures through indexes and complex sql joins with temporary tables.'
         ],
-        skills: ['SVN', 'Shell scripting', 'Sybase ASE (T/SQL)', 'C++', 'Powerbuilder']
+        skills: ['SVN', 'Shell scripting', 'Sybase ASE (T/SQL)', 'C++', 'Powerbuilder'],
+        tasks_fr: []
     },
     {
         id: i++, startDate: '2011-04-01', endDate: '2011-08-01', location: 'Paris, France', company: 'buzzing light',
@@ -57,7 +62,8 @@ export const JOBS: Job[] = [
             'Creation of the search engine based on the user location. Enhancement of this search engine to take into account many criterias (distance, type of contract, relevance).',
             'Contribution to the design of the visual identity.'
         ],
-        skills: ['PHP', 'HTML', 'CSS', 'JavaScript', 'AJAX', 'MySQL', 'Google Geolocation API']
+        skills: ['PHP', 'HTML', 'CSS', 'JavaScript', 'AJAX', 'MySQL', 'Google Geolocation API'],
+        tasks_fr: []
     }
 
 ];
