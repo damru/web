@@ -12,35 +12,44 @@
 $emerald: #50c878;
 $redish: #ff5252;
 
+$lightgrey: #bbbfbb;
+$grey: #707f70;
+$darkgrey: #323332;
+$blue: #325886;
+$lightgreen: #b6ceb1;
+$green: #90B289;
+$darkgreen: #688162;
+$heart: red;
+
 /****************************
 *** colors
 ****************************/
 .dark-grey {
-    color: #323332;
+    color: $darkgrey;
 }
 .grey {
-    color: #707F70;
+    color: $grey;
 }
 .light-grey {
-    color : #BBBFBB;
+    color : $lightgrey;
 }
 .blue {
-	color: #325886
+	color: $blue;
 }
 .dark-green {
-    color: #688162;
+    color: $darkgreen;
 }
 .light-green {
-    color: #b6ceb1;
+    color: $lightgreen;
 }
 .green {
-    color: #90B289;
+    color: $green;
 }
 .white {
-    color: #ffffff;
+    color: white;
 }
 .heart {
-    color: red;
+    color: $heart;
 }
 
 /****************************
