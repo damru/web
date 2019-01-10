@@ -1,13 +1,16 @@
 /****************************
 *** bootstrap
 ****************************/
-@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~bootstrap/scss/bootstrap';
 
 /****************************
 *** fonts
 ****************************/
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+$emerald: #50c878;
+$redish: #ff5252;
 
 /****************************
 *** colors

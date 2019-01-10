@@ -8,8 +8,10 @@
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
-      "@schematics/angular:component": {
-        "styleext": "scss"
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "scss"
+        }
       },
       "architect": {
         "build": {
@@ -25,7 +27,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": [
                 "node_modules/datediff/datediff.min.js"
@@ -83,7 +85,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": [],
             "assets": [
