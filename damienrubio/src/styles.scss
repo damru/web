@@ -1,7 +1,7 @@
 /****************************
 *** bootstrap
 ****************************/
-@import '~bootstrap/scss/bootstrap';
+@import "~src/assets/scss/main.scss";
 
 /****************************
 *** fonts
@@ -9,47 +9,11 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
-$emerald: #50c878;
-$redish: #ff5252;
-
-$lightgrey: #bbbfbb;
-$grey: #707f70;
-$darkgrey: #323332;
-$blue: #325886;
-$lightgreen: #b6ceb1;
-$green: #90B289;
-$darkgreen: #688162;
-$heart: red;
-
 /****************************
 *** colors
 ****************************/
-.dark-grey {
-    color: $darkgrey;
-}
-.grey {
-    color: $grey;
-}
-.light-grey {
-    color : $lightgrey;
-}
-.blue {
-	color: $blue;
-}
-.dark-green {
-    color: $darkgreen;
-}
-.light-green {
-    color: $lightgreen;
-}
-.green {
-    color: $green;
-}
-.white {
-    color: white;
-}
 .heart {
-    color: $heart;
+    color: red;
 }
 
 /****************************
@@ -58,29 +22,26 @@ $heart: red;
 body {
 	font-family: Calibri;
     min-width: 500px;
+    color: $darkgrey;
 }
 h1, h2 {
     font-family: "Oswald", sans-serif;
 	padding: 10px 5px 10px 5px;
 }
+h1 {
+    color: $lightgreen;
+}
 .text-smaller {
 	font-size: 0.9em;
 }
 
-/****************************
-*** header
-****************************/
-#personal-details {
-    margin: 30px auto 40px auto;
-    text-align: center;
-}
-#personal-details h1 {
-    padding: 0 0 0 0;
-    margin: 0 0 15px 0;
-    font-size: 2em;
-    text-transform: uppercase;
-}
+a {
+    color: $green;
 
+    &:hover {
+        color: $darkgreen;
+    }
+}
 /****************************
 *** cv components
 ****************************/
@@ -88,28 +49,13 @@ h1, h2 {
     margin: 0 0 40px 0;
     padding-right: 15px;
     padding-left: 15px;
-}
-.cv-part h1 {
-    border-bottom: 1px solid;
-	border-color: #b6ceb1;
-    text-align: center;
-    font-size: 1.8em;
-    text-transform: uppercase;
+
+    h1 {
+        border-bottom: 1px solid;
+        border-color: $lightgreen;
+        text-align: center;
+        font-size: 1.8em;
+        text-transform: uppercase;
+    }
 }
 
-/****************************
-*** footer
-****************************/
-#powered-by {
-    opacity: 0.5;
-    font-family: "Pacifico", cursive;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-#powered-by a {
-    color: #90B289;
-}
-#powered-by a:hover {
-    color: #688162;
-}

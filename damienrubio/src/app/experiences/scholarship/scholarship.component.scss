@@ -1,0 +1,25 @@
+@import "~src/assets/scss/variables";
+
+#education {
+    .school {
+        font-family: "Oswald", sans-serif;
+        font-size: 1.3em;
+    }
+
+    .schoolbis {
+        font-family: "Oswald", sans-serif;
+        color: $grey;
+    }
+
+    .major {
+        color: $darkgreen;
+    }
+
+    .minor {
+        color: $lightgreen;
+    }
+
+    .eq-diploma {
+        color: $grey;
+    }
+}

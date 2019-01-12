@@ -1,0 +1,32 @@
+@import "~src/assets/scss/variables";
+
+#work-experiences {
+    .company {
+        font-family: "Oswald", sans-serif;
+        font-size: 1.3em;
+    }
+
+    ul.tasks {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: justify;
+        line-height: 1.2em;
+    }
+    
+    ul.job-skills {
+        display: inline-block;
+        padding: 10px 20px 0 20px;
+        margin: 0;
+        font-style: italic;
+        font-weight: lighter;
+
+        li {
+            display: inline-block;
+        }
+
+        li:first-child::before {
+            content: "";
+        }
+    }
+}
