@@ -1,14 +1,9 @@
 @import "~src/assets/scss/variables";
 
 .experience {
-    margin-bottom: 1rem;
 
-    h2 {
-        font-size: 1.5em;
-        padding: 10px 5px 10px 5px;
-
-    }
-
+    margin-top: 10px;
+    
     .col-10 {
         margin-bottom: 1em;
 
@@ -17,40 +12,30 @@
         }
     }
 
-    span.eq-diploma {
-        display: block;
-        font-size: 0.9em;
-        color: $grey;
+    h2 {
+        padding-left: 15px;
+    }
+
+    .interval {
+        padding: 2px 5px;
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .duration {
+        color: $theme-font-lighter;
+        font-size: .9em;
     }
 
     .timeline {
-        padding: 0.5em 5px 0 5px;
-        border-right: 1px dotted $lightgreen;
-        color: $lightgreen;
+        font-size: $theme-font-smaller;
+        padding-top: 2px;
+        padding-right: 0;
 
-        strong {
-            color: $darkgreen;
+        div {
+            text-align: center;
         }
 
-        ::after {
-            position: absolute;
-            top: calc(0.5em + 0.5em); /* padding-top + 0.5em */
-            right: -5px;
-            width: 10px;
-            height: 10px;
-            content: '';
-            background-color: $lightgreen;
-            border-radius: 50%;
-        }
-    }
-    .location {
-        margin-bottom: 5px;
-        color: $lightgreen;
     }
 
-    ul li::before {
-        content: "•";
-        margin-right: 5px;
-        margin-left: 5px;
-    }
 }

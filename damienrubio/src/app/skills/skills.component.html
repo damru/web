@@ -1,21 +1,21 @@
 <div id="skills">
     <h1 id="skills-header">Skills</h1>
-    <div class="d-flex flex-lg-column flex-wrap justify-content-center" style="position:relative; top: -23px;">
+    <div class="d-flex flex-lg-column flex-wrap justify-content-center">
         <div class="skill" *ngFor="let skillCategory of skillCategories">
-            <h2>{{skillCategory.name}}</h2>
+            <h2 class="button-secondary">{{skillCategory.name}}</h2>
             <table>
                 <tr *ngFor="let skill of skills">
                     <td *ngIf="skill.categoryId === skillCategory.id" class="label">{{skill.name}}</td>
                     <td *ngIf="skill.categoryId === skillCategory.id">
-                        <div class="progress">
-                            <div class="progress-bar" [style.width.%]="skill.levelBase100">{{skill.levelBase100}}%</div>
-                        </div>
+                        <form>
+                            <input type="range" class="skill-range" value="{{skill.levelBase100}}" id="{{skill.name}}" disabled>
+                        </form>
                     </td>
                 </tr>
             </table>
         </div>
         <div class="skill">
-            <h2>Communication</h2>
+            <h2 class="button-secondary">Communication</h2>
             <table>
                 <tr>
                     <td class="label"><img src="assets/img/fr.png" /></td>
