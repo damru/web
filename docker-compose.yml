@@ -10,6 +10,7 @@ nginx:
         # websites
         - ./default:/usr/share/nginx/html
         - ./damienrubio/dist/damienrubio:/usr/share/nginx/html/damienrubio
+        - ./resume/dist/resume:/usr/share/nginx/html/resume
         - ./skrib:/usr/share/nginx/html/skrib
 
         #logs
@@ -24,4 +25,5 @@ php:
         # websites
         - ./default:/usr/share/nginx/html
         - ./damienrubio/dist/damienrubio:/usr/share/nginx/html/damienrubio
+        - ./resume/dist/resume:/usr/share/nginx/html/resume
         - ./skrib:/usr/share/nginx/html/skrib

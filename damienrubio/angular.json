@@ -29,9 +29,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [
-                "node_modules/datediff/datediff.min.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
