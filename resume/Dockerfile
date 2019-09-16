@@ -11,5 +11,5 @@ RUN npm run ng build -- --prod --output-path=dist
 FROM nginx:alpine
 COPY nginx/ /etc/nginx/
 RUN rm -rf /usr/share/nginx/html/*
-COPY --from=node-builder /ng-app/dist /usr/share/nginx/html/damienrubio
+COPY --from=node-builder /ng-app/dist /usr/share/nginx/html/resume
 CMD ["nginx", "-g", "daemon off;"]

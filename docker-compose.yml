@@ -1,29 +1,41 @@
-nginx:
-    restart: always
-    image: nginx:alpine
-    ports:
-        - "8080:80"
-    volumes:
-        # nginx
-        - ./nginx:/etc/nginx
+version: '3'
 
-        # websites
-        - ./default:/usr/share/nginx/html
-        - ./damienrubio/dist/damienrubio:/usr/share/nginx/html/damienrubio
-        - ./resume/dist/resume:/usr/share/nginx/html/resume
-        - ./skrib:/usr/share/nginx/html/skrib
+services:
+    nginx:
+        restart: always
+        image: nginx:alpine
+        ports:
+            - "8080:80"
+        volumes:
+            # nginx
+            - ./nginx:/etc/nginx
 
-        #logs
-        - ./logs:/var/log/nginx
-    links:
-        - php
+            # websites
+            - ./default:/usr/share/nginx/html
+            - ./skrib:/usr/share/nginx/html/skrib
 
-php:
-    restart: always
-    image: php:7-fpm-alpine
-    volumes:
-        # websites
-        - ./default:/usr/share/nginx/html
-        - ./damienrubio/dist/damienrubio:/usr/share/nginx/html/damienrubio
-        - ./resume/dist/resume:/usr/share/nginx/html/resume
-        - ./skrib:/usr/share/nginx/html/skrib
+            #logs
+            - ./logs:/var/log/nginx
+        links:
+            - php
+
+    php:
+        restart: always
+        image: php:7-fpm-alpine
+        volumes:
+            # websites
+            - ./default:/usr/share/nginx/html
+            - ./skrib:/usr/share/nginx/html/skrib
+
+    damienrubio:
+        restart: always
+        image: damru/damienrubio:latest
+        expose:
+            - "80"
+
+    resume:
+        restart: always
+        image: damru/web-resume:latest
+        expose:
+            - "80"
+

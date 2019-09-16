@@ -16,15 +16,10 @@ export class SkillsComponent implements OnInit {
     constructor(private skillService: SkillService) { }
 
     ngOnInit() {
-        this.getSkillCategories();
-        this.getSkills();
-    }
-
-    getSkillCategories(): void {
         this.skillCategories = this.skillService.getSkillCategories();
+        this.skillCategories = this.skillCategories.sort((a, b) => a.order - b.order)
+        this.skills = this.skillService.getSkills();
+        this.skills = this.skills.sort((a, b) => a.order - b.order)
     }
 
-    getSkills(): void {
-        this.skills = this.skillService.getSkills();
-    }
 }

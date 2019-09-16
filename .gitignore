@@ -41,3 +41,8 @@ Thumbs.db
 
 # Log files
 logs
+
+# Compiled
+/dist
+*/dist
+

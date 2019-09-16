@@ -5,13 +5,13 @@ $.fn.parallaxIn = function(orientation, speed) {
 	for (var i = 0; i < $(this).length; i++) {
 		var animation= {};
 		/* Random
-		 * random depending on length and > 0 . 
-		 * This will create parallax effect through speed on each element 
+		 * random depending on length and > 0 .
+		 * This will create parallax effect through speed on each element
 		 */
-		var rand=(1+Math.floor(Math.random()*(1+$(this).length))); 
+		var rand=(1+Math.floor(Math.random()*(1+$(this).length)));
 		/* Animation */
-		animation[orientation] = 0;		
-		$(this[i]).stop().animate(animation, speed);		
+		animation[orientation] = 0;
+		$(this[i]).stop().animate(animation, speed);
 	}
 	return this;
 }
@@ -24,15 +24,15 @@ $.fn.parallaxOut = function(orientation, speed, outOfScreen) {
 	for (var i = 0; i < $(this).length; i++) {
 		var animation= {};
 		/* Random
-		 * random depending on length and > 0 . 
-		 * This will create parallax effect through speed on each element 
+		 * random depending on length and > 0 .
+		 * This will create parallax effect through speed on each element
 		 */
-		var rand=(1+Math.floor(Math.random()*(1+$(this).length))); 
+		var rand=(1+Math.floor(Math.random()*(1+$(this).length)));
 		/* objectSize
 		 * left or right : use with
-		 * top or bottom : use height 
+		 * top or bottom : use height
 		 */
-		var objectSize = (orientation == 'left' || orientation == 'right') ? ($(this[i]).outerWidth(true)) : ($(this[i]).outerHeight(true)); 
+		var objectSize = (orientation == 'left' || orientation == 'right') ? ($(this[i]).outerWidth(true)) : ($(this[i]).outerHeight(true));
 		/* offset
 		 * use offset depending on the specified orientation
 		 * default : left
@@ -56,28 +56,22 @@ $.fn.parallaxOut = function(orientation, speed, outOfScreen) {
 }
 
 $(document).ready(function(){
-	HOME=window.location.hostname;
-	if((window.location.hostname).indexOf('skrib')>-1) {
-		HOME = "http://"+window.location.hostname+"";
-	} else {
-		HOME = "http://"+window.location.hostname+"/df";
-	}
-	
+
 	veryfast=10;
 	fast=200;
 	normal=400;
 	slow=600;
 	veryslow=800;
-	
+
 	/* Load menu */
 	var elementsPanelColor=$("#panel-color").children();
-	var elementsPanelBGColor=$("#panel-bgcolor").children();				
+	var elementsPanelBGColor=$("#panel-bgcolor").children();
 	setTimeout(function(){
-		elementsPanelColor.parallaxOut('left', normal);				
+		elementsPanelColor.parallaxOut('left', normal);
 		elementsPanelBGColor.parallaxOut('left', normal, true);
 		$("#changecolor #topicon").stop(true,true).show(veryslow);
 	}, 700);
-	
+
 	/* Menu effect */
 	$("#changecolor").hover(
 		function(){
@@ -90,16 +84,16 @@ $(document).ready(function(){
 			$("#changecolor #topicon").stop(true,true).show(veryslow);
 		}
 	);
-	
+
 	/* Change logo */
 	$("#panel-color .soon-img-mini").click(function() {
 		var color=$(this).attr('id');
 		var logo=$("#logoimg");
 		var logotmp=$("#logotmp");
-		logotmp.attr("src",HOME+"/img/soon-"+color+".png");
+		logotmp.attr("src","./img/soon-"+color+".png");
 		logotmp.fadeIn(normal);
 		logo.fadeOut(normal, function() {
-			logo.attr("src",HOME+"/img/soon-"+color+".png");
+			logo.attr("src","./img/soon-"+color+".png");
 			logo.fadeIn(veryfast, function() {
 				logotmp.fadeOut(veryfast);
 				logotmp.attr("src","");
@@ -107,7 +101,7 @@ $(document).ready(function(){
 		});
 		event.preventDefault();
 	});
-	
+
 	/* Load & Change theme */
 	$("html, body").animate(
 		{
@@ -116,14 +110,14 @@ $(document).ready(function(){
 		}
 	);
 	console.log($("#panel-bgcolor #dark").css("backgroundColor"));
-	
-	$("#changecolor #topicon").css("background","url('"+HOME+"/img/topicon-dark.png')");
+
+	$("#changecolor #topicon").css("background","url('./img/topicon-dark.png')");
 	$("#panel-bgcolor #light").hide();
 	$("#panel-bgcolor .soon-img-mini").click(function(){
 		var bgcolor=$(this).css("backgroundColor");
 		$(this).hide();
 		if($(this).attr("id")=="dark") {
-			$("#changecolor #topicon").css("background","url('"+HOME+"/img/topicon-light.png')");
+			$("#changecolor #topicon").css("background","url('./img/topicon-light.png')");
 			$("#panel-bgcolor #light").show();
 			$("html, body").animate(
 				{
@@ -132,7 +126,7 @@ $(document).ready(function(){
 				}
 			);
 		} else {
-			$("#changecolor #topicon").css("background","url('"+HOME+"/img/topicon-dark.png')");
+			$("#changecolor #topicon").css("background","url('./img/topicon-dark.png')");
 			$("#panel-bgcolor #dark").show();
 			$("html, body").animate(
 				{
