@@ -12,4 +12,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Build resume docker image
-      run: resume/build.sh
+      run: ./resume/build.sh
