@@ -1,0 +1,15 @@
+name: Web Resume CI
+
+on:
+  push:
+    branches:
+    - master
+    - release/*
+    
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build resume docker image
+      run: resume/build.sh
