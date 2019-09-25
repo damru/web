@@ -5,11 +5,15 @@ on:
     branches:
     - master
     - release/*
-    
+
 jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: Build resume docker image
-      run: ./resume/build.sh
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Build docker image
+      env:
+        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+        DOCKER_TOKEN: ${{ secrets.DOCKER_TOKEN }}
+      run: chmod +x resume/build.sh && ./resume/build.sh
